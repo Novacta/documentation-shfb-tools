@@ -1,0 +1,226 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<topic id="eb942a1c-fe7a-4d81-a19f-15f1dd5dd0c6" revisionNumber="1">
+  <developerConceptualDocument
+    xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5"
+    xmlns:xlink="http://www.w3.org/1999/xlink">
+
+    <introduction>
+      <para>
+        The instructions on this page are based on sample code that
+        demonstrates how to manage the
+        <codeEntityReference qualifyHint="false">
+          T:Novacta.Documentation.ShfbTools.HighlightingTools
+        </codeEntityReference>,
+        and how to use them
+        to highlight class names in code examples
+        included in SHFB documentation topics.
+      </para>
+      <para>
+        The sample is located
+        <externalLink>
+          <linkText>here</linkText>
+          <linkUri>
+            https://github.com/novacta/documentation-shfb-tools/blob/master/samples
+          </linkUri>
+        </externalLink>.
+      </para>
+      <para>
+        It includes what follows.
+      </para>
+      <list class="bullet">
+        <listItem>
+          <para>
+            Project
+            <externalLink>
+              <linkText>
+                HighlightingToolsManager
+              </linkText>
+              <linkUri>https://github.com/novacta/documentation-shfb-tools/blob/master/samples/HighlightingToolsManager</linkUri>
+            </externalLink>,
+            a console application that updates
+            a SHFB installation by adding the
+            <codeEntityReference qualifyHint="false">
+              T:Novacta.Documentation.ShfbTools.HighlightingTools
+            </codeEntityReference>.
+          </para>
+        </listItem>
+        <listItem>
+          <para>
+            Project
+            <externalLink>
+              <linkText>
+                SampleClassLibrary
+              </linkText>
+              <linkUri>https://github.com/novacta/documentation-shfb-tools/blob/master/samples/SampleClassLibrary</linkUri>
+            </externalLink>,
+            containing code to be documented
+            through XML comments, including code examples
+            whose class names are highlighted by the tools.
+          </para>
+        </listItem>
+        <listItem>
+          <para>
+            Project
+            <externalLink>
+              <linkText>
+                SampleClassLibrary.Documentation
+              </linkText>
+              <linkUri>https://github.com/novacta/documentation-shfb-tools/blob/master/samples/SampleClassLibrary.Documentation</linkUri>
+            </externalLink>,
+            that generates the documentation for
+            <legacyBold>SampleClassLibrary</legacyBold>
+            exploiting the highlighting tools.
+          </para>
+        </listItem>
+      </list>
+    </introduction>
+
+    <!-- Add one or more top-level section elements.  These are collapsible.
+         If using <autoOutline />, add an address attribute to identify it
+         and specify a title so that it can be jumped to with a hyperlink. -->
+    <section address="sectionManageHighlightingTools">
+      <title>Managing the Highlighting Tools</title>
+      <content>
+        <!--SUB-->
+        <para>
+          <legacyBold>Install the target version of SHFB</legacyBold>
+        </para>
+        <para></para>
+        <para>
+          Each release of
+          <legacyBold>Novacta.Documentation.ShfbTools</legacyBold>
+          targets a specific version of SHFB.
+          Such target version always matches
+          the version of the tools.
+        </para>
+        <para>
+          Make sure that the SHFB version targeted by the tools
+          is currently installed on your host machine.
+        </para>
+        <para>
+          You can download the required SHFB release
+          <externalLink>
+            <linkText>
+              here
+            </linkText>
+            <linkUri>https://github.com/EWSoftware/SHFB/releases</linkUri>
+          </externalLink>.
+        </para>
+        <!--SUB-->
+        <para></para>
+        <para>
+          <legacyBold>Manage the Highlighting Tools</legacyBold>
+        </para>
+        <para></para>
+        <para>
+          Create a console application
+          targeting the
+          <externalLink>
+            <linkText>.NET Framework, version 4.6.2</linkText>
+            <linkUri>https://github.com/Microsoft/dotnet/blob/master/releases/net462/README.md</linkUri>
+          </externalLink>.
+          In this tutorial, such application is represented by
+          project
+          <externalLink>
+            <linkText>
+              HighlightingToolsManager
+            </linkText>
+            <linkUri>https://github.com/novacta/documentation-shfb-tools/blob/master/samples/HighlightingToolsManager</linkUri>
+          </externalLink>.
+        </para>
+        <para>
+          Add to your console project a reference to
+          the Novacta.Documentation.ShfbTools
+          <externalLink>
+            <linkText>NuGet package</linkText>
+            <linkUri>https://www.nuget.org/packages/Novacta.Documentation.ShfbTools</linkUri>
+          </externalLink>.
+          Remember that, at present, the tools are versioned as pre-release software.
+          Follow
+          <externalLink>
+            <linkText>these instructions</linkText>
+            <linkUri>
+              https://docs.microsoft.com/en-us/nuget/create-packages/prerelease-packages#installing-and-updating-pre-release-packages
+            </linkUri>
+          </externalLink> to include pre-release versions when installing the tools.
+        </para>
+        <para>
+          Request full administration permissions for the console application:
+          add to the project an <codeInline>app.manifest</codeInline> file as follows.
+        </para>
+        <code language="xml"
+              source="..\..\samples\HighlightingToolsManager\app.manifest"
+              title ="app.manifest">
+        </code>
+        <para>
+          In your <codeInline>Program</codeInline> class, implement method 
+          <codeInline>Main</codeInline>
+          as follows.
+        </para>
+        <code source="..\..\samples\HighlightingToolsManager\Program.cs"
+          language="cs" title="HighlightingToolsManager\Program.cs" />
+        <para>
+          This example shows standard use case scenarios:
+        </para>
+        <list class="bullet">
+          <listItem>
+            <para>
+              Setting a color for highlighting class names via the
+              <codeEntityReference qualifyHint="false">
+                M:Novacta.Documentation.ShfbTools.HighlightingTools.SetClassNamesColor(System.String)
+              </codeEntityReference>.
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              Add a family of class names to be highlighted in code examples
+              written in specific languages via the
+              <codeEntityReference qualifyHint="false">
+                M:Novacta.Documentation.ShfbTools.HighlightingTools.AddClassNamesFamily(System.String,System.Collections.Generic.IEnumerable{System.String},System.Collections.Generic.IEnumerable{System.String})
+              </codeEntityReference>.
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              Remove a family of class names from
+              every supported language via the
+              <codeEntityReference qualifyHint="false">
+                M:Novacta.Documentation.ShfbTools.HighlightingTools.RemoveClassNamesFamily(System.String)
+              </codeEntityReference>.
+            </para>
+          </listItem>
+        </list>
+        <para>
+          These methods have console outputs showing
+          reports in which is signaled if the corresponding operations were successful.
+          If failure conditions are reported, please act to remove them
+          and try again.
+        </para>
+        <para>
+          As an example, the following file printout shows the source code for
+          type
+          <codeEntityReference qualifyHint="false">
+            T:SampleClassLibrary.IntegerOperation
+          </codeEntityReference>,
+          as defined in project
+          <externalLink>
+            <linkText>
+              SampleClassLibrary
+            </linkText>
+            <linkUri>https://github.com/novacta/documentation-shfb-tools/blob/master/samples/SampleClassLibrary</linkUri>
+          </externalLink>:
+        </para>
+        <code numberLines="true" source="..\..\samples\SampleClassLibrary\IntegerOperation.cs"
+         language="cs" title="SampleClassLibrary\IntegerOperation.cs" />
+        <para>
+          Note how the <codeInline>IntegerOperation</codeInline> class name
+          at line 8
+          has been highlighted.
+        </para>
+      </content>
+    </section>
+
+    <relatedTopics>
+    </relatedTopics>
+  </developerConceptualDocument>
+</topic>

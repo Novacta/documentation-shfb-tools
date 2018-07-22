@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<topic id="f1fb7d15-a64e-4b8f-b6b4-631d34e81ce5" revisionNumber="1">
+  <developerConceptualDocument
+    xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5"
+    xmlns:xlink="http://www.w3.org/1999/xlink">
+
+    <introduction>
+      <para>
+        Each release of
+        <legacyBold>Novacta.Documentation.ShfbTools</legacyBold>
+        targets a specific version of SHFB.
+        Such target version always matches
+        the version of the tools.
+      </para>
+      <para>
+        Make sure that the SHFB version targeted by the tools
+        is currently installed on your host machine.
+      </para>
+      <para>
+        When installed, SHFB defines an enviromental variable
+        named <codeInline>SHFBROOT</codeInline>.
+        To test the tools, copy to folder
+      </para>
+      <quote>
+        tests\Novacta.Documentation.ShfbTools.Tests\testshfbroot
+      </quote>
+      <para>
+        the following files and sub-folders from the directory
+        indicated by the environmental variable <codeInline>SHFBROOT</codeInline>:
+      </para>
+      <list class="bullet">
+        <listItem>
+          <para>
+            File <legacyBold>SHFBProjectLauncher.exe</legacyBold>
+          </para>
+        </listItem>
+        <listItem>
+          <para>
+            Sub-folder <legacyBold>ConceptualTemplates</legacyBold>
+          </para>
+        </listItem>
+        <listItem>
+          <para>
+            Sub-folder <legacyBold>PresentationStyles</legacyBold>
+          </para>
+        </listItem>
+      </list>
+    </introduction>
+    <relatedTopics></relatedTopics>
+  </developerConceptualDocument>
+</topic>

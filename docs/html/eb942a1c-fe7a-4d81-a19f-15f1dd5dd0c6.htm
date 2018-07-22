@@ -1,0 +1,259 @@
+﻿<html><head><meta http-equiv="X-UA-Compatible" content="IE=edge" /><link rel="shortcut icon" href="../icons/favicon.ico" /><link rel="stylesheet" type="text/css" href="../styles/branding.css" /><link rel="stylesheet" type="text/css" href="../styles/branding-en-US.css" /><script type="text/javascript" src="../scripts/branding.js">
+          </script><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>Highlighting class names</title><meta name="Language" content="en-us" /><meta name="Microsoft.Help.Id" content="eb942a1c-fe7a-4d81-a19f-15f1dd5dd0c6" /><meta name="Description" content="The instructions on this page are based on sample code that demonstrates how to manage the T:Novacta.Documentation.ShfbTools.HighlightingTools , and how to use them to highlight class names in code examples included in SHFB documentation topics." /><meta name="Microsoft.Help.ContentType" content="Concepts" /><meta name="BrandingAware" content="true" /><link type="text/css" rel="stylesheet" href="../styles/highlight.css" /><script type="text/javascript" src="../scripts/highlight.js"> </script><link rel="stylesheet" type="text/css" href="../styles/branding-Website.css" /><script type="text/javascript" src="../scripts/jquery-1.11.0.min.js"></script><script type="text/javascript" src="../scripts/branding-Website.js"></script><script type="text/javascript" src="../scripts/clipboard.min.js"></script></head><body onload="OnLoad('cs')"><input type="hidden" id="userDataCache" class="userDataStyle" /><div class="pageHeader" id="PageHeader">Novacta.Documentation.ShfbTools Documentation<form id="SearchForm" method="get" action="#" onsubmit="javascript:TransferToSearchPage(); return false;"><input id="SearchTextBox" type="text" maxlength="200" /><button id="SearchButton" type="submit"></button></form></div><div class="pageBody"><div class="leftNav" id="leftNav"><div id="tocNav"><div class="toclevel0" data-toclevel="0" data-childrenloaded="true"><a class="tocExpanded" onclick="javascript: Toggle(this);" href="#!" /><a data-tochassubtree="true" href="../html\fe868fbe-1bfd-47f7-bf24-e1fd586864c6.htm" title="Novacta.Documentation.ShfbTools Documentation" tocid="roottoc">Novacta.Documentation.ShfbTools Documentation</a></div><div class="toclevel1" data-toclevel="1"><a data-tochassubtree="false" href="../html/fe868fbe-1bfd-47f7-bf24-e1fd586864c6.htm" title="Welcome" tocid="fe868fbe-1bfd-47f7-bf24-e1fd586864c6">Welcome</a></div><div class="toclevel1" data-toclevel="1"><a data-tochassubtree="false" href="../html/77c2fac9-a810-4e5b-ba0e-afff50a42467.htm" title="License agreement" tocid="77c2fac9-a810-4e5b-ba0e-afff50a42467">License agreement</a></div><div class="toclevel1" data-toclevel="1"><a data-tochassubtree="false" href="../html/47a5afe5-726c-4f74-9ab1-90740bf0a692.htm" title="Adding LaTeX equations" tocid="47a5afe5-726c-4f74-9ab1-90740bf0a692">Adding LaTeX equations</a></div><div class="toclevel1" data-toclevel="1"><a data-tochassubtree="false" href="../html/2fb0ed9f-cfa1-4e3f-88fd-ce4de4abeea7.htm" title="Using images in reference topics" tocid="2fb0ed9f-cfa1-4e3f-88fd-ce4de4abeea7">Using images in reference topics</a></div><div class="toclevel1 current" data-toclevel="1"><a data-tochassubtree="false" href="../html/eb942a1c-fe7a-4d81-a19f-15f1dd5dd0c6.htm" title="Highlighting class names" tocid="eb942a1c-fe7a-4d81-a19f-15f1dd5dd0c6">Highlighting class names</a></div><div class="toclevel1" data-toclevel="1"><a data-tochassubtree="false" href="../html/f1fb7d15-a64e-4b8f-b6b4-631d34e81ce5.htm" title="Testing the tools" tocid="f1fb7d15-a64e-4b8f-b6b4-631d34e81ce5">Testing the tools</a></div><div class="toclevel1" data-toclevel="1"><a class="tocCollapsed" onclick="javascript: Toggle(this);" href="#!" /><a data-tochassubtree="true" href="../html/7abd97df-f098-4afa-9f9c-2255d3e61a33.htm" title="Version History" tocid="7abd97df-f098-4afa-9f9c-2255d3e61a33">Version History</a></div><div class="toclevel1" data-toclevel="1"><a class="tocCollapsed" onclick="javascript: Toggle(this);" href="#!" /><a data-tochassubtree="true" href="../html/4678ffc8-bbaf-a1ac-fc8e-8ab105f12552.htm" title="Novacta.Documentation.ShfbTools" tocid="4678ffc8-bbaf-a1ac-fc8e-8ab105f12552">Novacta.Documentation.ShfbTools</a></div><div class="toclevel1" data-toclevel="1"><a class="tocCollapsed" onclick="javascript: Toggle(this);" href="#!" /><a data-tochassubtree="true" href="../html/3a466136-0a03-0104-bbf3-34b96985ddd8.htm" title="SampleClassLibrary Namespaces" tocid="3a466136-0a03-0104-bbf3-34b96985ddd8">SampleClassLibrary Namespaces</a></div></div><div id="tocResizableEW" onmousedown="OnMouseDown(event);"></div><div id="TocResize" class="tocResize"><img id="ResizeImageIncrease" src="../icons/TocOpen.gif" onclick="OnIncreaseToc()" alt="Click or drag to resize" title="Click or drag to resize" /><img id="ResizeImageReset" src="../icons/TocClose.gif" style="display:none" onclick="OnResetToc()" alt="Click or drag to resize" title="Click or drag to resize" /></div></div><div class="topicContent" id="TopicContent"><table class="titleTable"><tr><td class="logoColumn"><img src="../icons/Help.png" /></td><td class="titleColumn"><h1>Highlighting class names</h1></td></tr></table><span class="introStyle"></span> <div class="introduction"><p>
+        The instructions on this page are based on sample code that
+        demonstrates how to manage the
+        <a href="4e5a88b0-2d69-bc64-9c01-3d6eed1599b7.htm">HighlightingTools</a>,
+        and how to use them
+        to highlight class names in code examples
+        included in SHFB documentation topics.
+      </p><p>
+        The sample is located
+        <a href="https://github.com/novacta/documentation-shfb-tools/blob/master/samples" target="_blank">here</a>.
+      </p><p>
+        It includes what follows.
+      </p><ul><li><p>
+            Project
+            <a href="https://github.com/novacta/documentation-shfb-tools/blob/master/samples/HighlightingToolsManager" target="_blank">HighlightingToolsManager</a>,
+            a console application that updates
+            a SHFB installation by adding the
+            <a href="4e5a88b0-2d69-bc64-9c01-3d6eed1599b7.htm">HighlightingTools</a>.
+          </p></li><li><p>
+            Project
+            <a href="https://github.com/novacta/documentation-shfb-tools/blob/master/samples/SampleClassLibrary" target="_blank">SampleClassLibrary</a>,
+            containing code to be documented
+            through XML comments, including code examples
+            whose class names are highlighted by the tools.
+          </p></li><li><p>
+            Project
+            <a href="https://github.com/novacta/documentation-shfb-tools/blob/master/samples/SampleClassLibrary.Documentation" target="_blank">SampleClassLibrary.Documentation</a>,
+            that generates the documentation for
+            <strong>SampleClassLibrary</strong>
+            exploiting the highlighting tools.
+          </p></li></ul></div><div class="collapsibleAreaRegion" id="sectionManageHighlightingTools"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID1RB')" onkeypress="SectionExpandCollapse_CheckKey('ID1RB', event)" tabindex="0"><img id="ID1RBToggle" class="collapseToggle" src="../icons/SectionExpanded.png" />Managing the Highlighting Tools</span></div><div id="ID1RBSection" class="collapsibleSection"><p><strong>Install the target version of SHFB</strong></p><p /><p>
+          Each release of
+          <strong>Novacta.Documentation.ShfbTools</strong>
+          targets a specific version of SHFB.
+          Such target version always matches
+          the version of the tools.
+        </p><p>
+          Make sure that the SHFB version targeted by the tools
+          is currently installed on your host machine.
+        </p><p>
+          You can download the required SHFB release
+          <a href="https://github.com/EWSoftware/SHFB/releases" target="_blank">here</a>.
+        </p><p /><p><strong>Manage the Highlighting Tools</strong></p><p /><p>
+          Create a console application
+          targeting the
+          <a href="https://github.com/Microsoft/dotnet/blob/master/releases/net462/README.md" target="_blank">.NET Framework, version 4.6.2</a>.
+          In this tutorial, such application is represented by
+          project
+          <a href="https://github.com/novacta/documentation-shfb-tools/blob/master/samples/HighlightingToolsManager" target="_blank">HighlightingToolsManager</a>.
+        </p><p>
+          Add to your console project a reference to
+          the Novacta.Documentation.ShfbTools
+          <a href="https://www.nuget.org/packages/Novacta.Documentation.ShfbTools" target="_blank">NuGet package</a>.
+          Remember that, at present, the tools are versioned as pre-release software.
+          Follow
+          <a href="https://docs.microsoft.com/en-us/nuget/create-packages/prerelease-packages#installing-and-updating-pre-release-packages" target="_blank">these instructions</a> to include pre-release versions when installing the tools.
+        </p><p>
+          Request full administration permissions for the console application:
+          add to the project an <span class="code">app.manifest</span> file as follows.
+        </p><div class="codeSnippetContainer"><div class="codeSnippetContainerTabs"><div id="ID0EAIABAAA_tab1" class="codeSnippetContainerTabSingle">app.manifest</div></div><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetToolBar"><div class="codeSnippetToolBarText"><a id="ID0EAIABAAA_copyCode" href="#" class="copyCodeSnippet" onclick="javascript:CopyToClipboard('ID0EAIABAAA');return false;" title="Copy">Copy</a></div></div><div id="ID0EAIABAAA_code_Div1" class="codeSnippetContainerCode" style="display: block"><pre xml:space="preserve"><span class="highlight-xml-bracket">&lt;?</span><span class="highlight-xml-tag">xml</span> <span class="highlight-xml-attribute-name">version</span><span class="highlight-xml-attribute-equal">=</span><span class="highlight-xml-attribute-value">"1.0"</span> <span class="highlight-xml-attribute-name">encoding</span><span class="highlight-xml-attribute-equal">=</span><span class="highlight-xml-attribute-value">"utf-8"</span><span class="highlight-xml-bracket">?&gt;</span>
+<span class="highlight-xml-bracket">&lt;</span><span class="highlight-xml-tag">assembly</span> <span class="highlight-xml-attribute-name">manifestVersion</span><span class="highlight-xml-attribute-equal">=</span><span class="highlight-xml-attribute-value">"1.0"</span> <span class="highlight-xml-attribute-name">xmlns</span><span class="highlight-xml-attribute-equal">=</span><span class="highlight-xml-attribute-value">"urn:schemas-microsoft-com:asm.v1"</span><span class="highlight-xml-bracket">&gt;</span>
+  <span class="highlight-xml-bracket">&lt;</span><span class="highlight-xml-tag">assemblyIdentity</span> <span class="highlight-xml-attribute-name">version</span><span class="highlight-xml-attribute-equal">=</span><span class="highlight-xml-attribute-value">"1.0.0.0"</span> <span class="highlight-xml-attribute-name">name</span><span class="highlight-xml-attribute-equal">=</span><span class="highlight-xml-attribute-value">"MyApplication.app"</span><span class="highlight-xml-bracket">/&gt;</span>
+  <span class="highlight-xml-bracket">&lt;</span><span class="highlight-xml-tag">trustInfo</span> <span class="highlight-xml-attribute-name">xmlns</span><span class="highlight-xml-attribute-equal">=</span><span class="highlight-xml-attribute-value">"urn:schemas-microsoft-com:asm.v2"</span><span class="highlight-xml-bracket">&gt;</span>
+    <span class="highlight-xml-bracket">&lt;</span><span class="highlight-xml-tag">security</span><span class="highlight-xml-bracket">&gt;</span>
+      <span class="highlight-xml-bracket">&lt;</span><span class="highlight-xml-tag">requestedPrivileges</span> <span class="highlight-xml-attribute-name">xmlns</span><span class="highlight-xml-attribute-equal">=</span><span class="highlight-xml-attribute-value">"urn:schemas-microsoft-com:asm.v3"</span><span class="highlight-xml-bracket">&gt;</span>
+        <span class="highlight-xml-bracket">&lt;</span><span class="highlight-xml-tag">requestedExecutionLevel</span> <span class="highlight-xml-attribute-name">level</span><span class="highlight-xml-attribute-equal">=</span><span class="highlight-xml-attribute-value">"requireAdministrator"</span> <span class="highlight-xml-attribute-name">uiAccess</span><span class="highlight-xml-attribute-equal">=</span><span class="highlight-xml-attribute-value">"false"</span> <span class="highlight-xml-bracket">/&gt;</span>
+      <span class="highlight-xml-bracket">&lt;/</span><span class="highlight-xml-tag">requestedPrivileges</span><span class="highlight-xml-bracket">&gt;</span>
+    <span class="highlight-xml-bracket">&lt;/</span><span class="highlight-xml-tag">security</span><span class="highlight-xml-bracket">&gt;</span>
+  <span class="highlight-xml-bracket">&lt;/</span><span class="highlight-xml-tag">trustInfo</span><span class="highlight-xml-bracket">&gt;</span>
+
+  <span class="highlight-xml-bracket">&lt;</span><span class="highlight-xml-tag">compatibility</span> <span class="highlight-xml-attribute-name">xmlns</span><span class="highlight-xml-attribute-equal">=</span><span class="highlight-xml-attribute-value">"urn:schemas-microsoft-com:compatibility.v1"</span><span class="highlight-xml-bracket">&gt;</span>
+    <span class="highlight-xml-bracket">&lt;</span><span class="highlight-xml-tag">application</span><span class="highlight-xml-bracket">&gt;</span>
+    <span class="highlight-xml-bracket">&lt;/</span><span class="highlight-xml-tag">application</span><span class="highlight-xml-bracket">&gt;</span>
+  <span class="highlight-xml-bracket">&lt;/</span><span class="highlight-xml-tag">compatibility</span><span class="highlight-xml-bracket">&gt;</span>
+<span class="highlight-xml-bracket">&lt;/</span><span class="highlight-xml-tag">assembly</span><span class="highlight-xml-bracket">&gt;</span></pre></div></div></div><script type="text/javascript">AddLanguageTabSet("ID0EAIABAAA");</script><p>
+          In your <span class="code">Program</span> class, implement method 
+          <span class="code">Main</span>
+          as follows.
+        </p><div class="codeSnippetContainer"><div class="codeSnippetContainerTabs"><div id="ID0EAGABAAA_tab1" class="codeSnippetContainerTabSingle">HighlightingToolsManager\Program.cs</div></div><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetToolBar"><div class="codeSnippetToolBarText"><a id="ID0EAGABAAA_copyCode" href="#" class="copyCodeSnippet" onclick="javascript:CopyToClipboard('ID0EAGABAAA');return false;" title="Copy">Copy</a></div></div><div id="ID0EAGABAAA_code_Div1" class="codeSnippetContainerCode" style="display: block"><pre xml:space="preserve"><span class="highlight-keyword">using</span> Novacta.Documentation.ShfbTools;
+<span class="highlight-keyword">using</span> System;
+<span class="highlight-keyword">using</span> System.Collections.Generic;
+
+<span class="highlight-keyword">namespace</span> HighlightingToolsManager
+{
+    <span class="highlight-keyword">class</span> Program
+    {
+        <span class="highlight-keyword">static</span> <span class="highlight-keyword">void</span> Main(<span class="highlight-keyword">string</span>[] args)
+        {
+            <span class="highlight-comment">// It is assumed that the version of SHFB</span>
+            <span class="highlight-comment">// targeted by the SHFB Tools</span>
+            <span class="highlight-comment">// is installed on the host machine.</span>
+
+            <span class="highlight-comment">// To highlight specific class names,</span>
+            <span class="highlight-comment">// execute the following steps, A to B.</span>
+
+            <span class="highlight-comment">// A. Set a color to be</span>
+            <span class="highlight-comment">// applied when highlighting.</span>
+            <span class="highlight-comment">// See the documentation for a list of </span>
+            <span class="highlight-comment">// supported colors.</span>
+            HighlightingTools.SetClassNamesColor(<span class="highlight-literal">"RoyalBlue"</span>);
+
+            <span class="highlight-comment">// B. Add the class names to be highlighted.</span>
+
+            <span class="highlight-comment">// B.1 In SHFB, class names are grouped by</span>
+            <span class="highlight-comment">// an identifier referred to as a "family".</span>
+            <span class="highlight-keyword">string</span> family = <span class="highlight-literal">"sampleFamily"</span>;
+
+            <span class="highlight-comment">// B.2 List the class names.</span>
+            List&lt;<span class="highlight-keyword">string</span>&gt; names = <span class="highlight-keyword">new</span> List&lt;<span class="highlight-keyword">string</span>&gt;() {
+                <span class="highlight-literal">"IntegerOperation"</span>,
+                <span class="highlight-literal">"IntegerArrayOperation"</span>
+            };
+
+            <span class="highlight-comment">// B.3 In SHFB, keyword families are linked to</span>
+            <span class="highlight-comment">// languages.</span>
+            <span class="highlight-comment">// List the languages for which you want</span>
+            <span class="highlight-comment">// the class names highlighted.</span>
+            <span class="highlight-comment">// See the documentation for a list of </span>
+            <span class="highlight-comment">// supported languages.</span>
+            List&lt;<span class="highlight-keyword">string</span>&gt; languages = <span class="highlight-keyword">new</span> List&lt;<span class="highlight-keyword">string</span>&gt;() {
+                <span class="highlight-literal">"cs"</span>,
+                <span class="highlight-literal">"vbnet"</span>
+            };
+
+            <span class="highlight-comment">// B.4 Update your SHFB installation so that</span>
+            <span class="highlight-comment">// your class names are recognized as a family</span>
+            <span class="highlight-comment">// of keywords for the specified languages.</span>
+            HighlightingTools.AddClassNamesFamily(
+                family,
+                names,
+                languages);
+
+            <span class="highlight-comment">// To remove a family of class names,</span>
+            <span class="highlight-comment">// so that it will no longer be highlighted.</span>
+            HighlightingTools.RemoveClassNamesFamily(family);
+
+            Console.ReadKey();
+        }
+    }
+}</pre></div></div></div><script type="text/javascript">AddLanguageTabSet("ID0EAGABAAA");</script><p>
+          This example shows standard use case scenarios:
+        </p><ul><li><p>
+              Setting a color for highlighting class names via the
+              <a href="444b8474-0e7b-1a60-7e77-41511d864594.htm">SetClassNamesColor</a>.
+            </p></li><li><p>
+              Add a family of class names to be highlighted in code examples
+              written in specific languages via the
+              <a href="5630b532-ab3d-ef3d-453e-85285c4cae80.htm">AddClassNamesFamily</a>.
+            </p></li><li><p>
+              Remove a family of class names from
+              every supported language via the
+              <a href="8796fecc-e48b-769e-f659-a97809d04e8a.htm">RemoveClassNamesFamily</a>.
+            </p></li></ul><p>
+          These methods have console outputs showing
+          reports in which is signaled if the corresponding operations were successful.
+          If failure conditions are reported, please act to remove them
+          and try again.
+        </p><p>
+          As an example, the following file printout shows the source code for
+          type
+          <a href="07ae9d09-40d5-f692-6d0e-74c286693c03.htm">IntegerOperation</a>,
+          as defined in project
+          <a href="https://github.com/novacta/documentation-shfb-tools/blob/master/samples/SampleClassLibrary" target="_blank">SampleClassLibrary</a>:
+        </p><div class="codeSnippetContainer"><div class="codeSnippetContainerTabs"><div id="ID0EABABAAA_tab1" class="codeSnippetContainerTabSingle">SampleClassLibrary\IntegerOperation.cs</div></div><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetToolBar"><div class="codeSnippetToolBarText"><a id="ID0EABABAAA_copyCode" href="#" class="copyCodeSnippet" onclick="javascript:CopyToClipboard('ID0EABABAAA');return false;" title="Copy">Copy</a></div></div><div id="ID0EABABAAA_code_Div1" class="codeSnippetContainerCode" style="display: block"><pre xml:space="preserve"><span class="highlight-lineno"> 1</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span><span class="highlight-keyword">using</span> System;
+<span class="highlight-lineno"> 2</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>
+<span class="highlight-lineno"> 3</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span><span class="highlight-keyword">namespace</span> SampleClassLibrary
+<span class="highlight-lineno"> 4</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>{
+<span class="highlight-lineno"> 5</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>    <span class="highlight-comment">/// &lt;summary&gt;</span>
+<span class="highlight-lineno"> 6</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>    <span class="highlight-comment">/// Provides a method to operate on integers.</span>
+<span class="highlight-lineno"> 7</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>    <span class="highlight-comment">/// &lt;/summary&gt;</span>
+<span class="highlight-lineno"> 8</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>    <span class="highlight-keyword">public</span> <span class="highlight-keyword">static</span> <span class="highlight-keyword">class</span> <span class="highlight-class-name">IntegerOperation</span>
+<span class="highlight-lineno"> 9</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>    {
+<span class="highlight-lineno">10</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>        <span class="highlight-comment">/// &lt;summary&gt;</span>
+<span class="highlight-lineno">11</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>        <span class="highlight-comment">/// Applies the specified function to the given operand.</span>
+<span class="highlight-lineno">12</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>        <span class="highlight-comment">/// &lt;/summary&gt;</span>
+<span class="highlight-lineno">13</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>        <span class="highlight-comment">/// &lt;param name="func"&gt;The function.&lt;/param&gt;</span>
+<span class="highlight-lineno">14</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>        <span class="highlight-comment">/// &lt;param name="operand"&gt;The operand.&lt;/param&gt;</span>
+<span class="highlight-lineno">15</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>        <span class="highlight-comment">/// &lt;returns&gt;The result of the operation.&lt;/returns&gt;</span>
+<span class="highlight-lineno">16</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>        <span class="highlight-comment">/// &lt;exception cref="ArgumentNullException"&gt;</span>
+<span class="highlight-lineno">17</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>        <span class="highlight-comment">/// &lt;paramref name="func"/&gt; is &lt;b&gt;null&lt;/b&gt;.&lt;/exception&gt;</span>
+<span class="highlight-lineno">18</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>        <span class="highlight-comment">/// &lt;example&gt;</span>
+<span class="highlight-lineno">19</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>        <span class="highlight-comment">/// &lt;para&gt;</span>
+<span class="highlight-lineno">20</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>        <span class="highlight-comment">/// In the following example, the applied function, say </span>
+<span class="highlight-lineno">21</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>        <span class="highlight-comment">/// &lt;latex mode='inline'&gt;f:\mathbb{N}\rightarrow \mathbb{N},&lt;/latex&gt; is defined as</span>
+<span class="highlight-lineno">22</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>        <span class="highlight-comment">/// &lt;latex mode='display'&gt;</span>
+<span class="highlight-lineno">23</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>        <span class="highlight-comment">/// \forall n \in \mathbb{N}: n \mapsto f\left(n\right)=n^2.</span>
+<span class="highlight-lineno">24</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>        <span class="highlight-comment">/// &lt;/latex&gt;</span>
+<span class="highlight-lineno">25</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>        <span class="highlight-comment">/// A plot of such function is displayed in the following</span>
+<span class="highlight-lineno">26</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>        <span class="highlight-comment">/// figure.</span>
+<span class="highlight-lineno">27</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>        <span class="highlight-comment">/// &lt;image&gt;</span>
+<span class="highlight-lineno">28</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>        <span class="highlight-comment">/// &lt;alt&gt;A function.&lt;/alt&gt;</span>
+<span class="highlight-lineno">29</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>        <span class="highlight-comment">/// &lt;src&gt;Function.png&lt;/src&gt;</span>
+<span class="highlight-lineno">30</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>        <span class="highlight-comment">/// &lt;width&gt;100%&lt;/width&gt;</span>
+<span class="highlight-lineno">31</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>        <span class="highlight-comment">/// &lt;/image&gt;</span>
+<span class="highlight-lineno">32</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>        <span class="highlight-comment">/// An integer is thus squared </span>
+<span class="highlight-lineno">33</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>        <span class="highlight-comment">/// executing the &lt;see cref="Operate(Func{int, int}, int)"/&gt; method.</span>
+<span class="highlight-lineno">34</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>        <span class="highlight-comment">/// In addition, input validation is also checked.</span>
+<span class="highlight-lineno">35</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>        <span class="highlight-comment">/// &lt;/para&gt;</span>
+<span class="highlight-lineno">36</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>        <span class="highlight-comment">/// &lt;para&gt;</span>
+<span class="highlight-lineno">37</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>        <span class="highlight-comment">/// &lt;code language="cs"&gt;</span>
+<span class="highlight-lineno">38</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>        <span class="highlight-comment">/// using System;</span>
+<span class="highlight-lineno">39</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>        <span class="highlight-comment">/// namespace SampleClassLibrary.CodeExamples</span>
+<span class="highlight-lineno">40</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>        <span class="highlight-comment">/// {</span>
+<span class="highlight-lineno">41</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>        <span class="highlight-comment">///     public class IntegerOperationExample</span>
+<span class="highlight-lineno">42</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>        <span class="highlight-comment">///     {</span>
+<span class="highlight-lineno">43</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>        <span class="highlight-comment">///         public void Main()</span>
+<span class="highlight-lineno">44</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>        <span class="highlight-comment">///         {</span>
+<span class="highlight-lineno">45</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>        <span class="highlight-comment">///             // Define an operator that squares its operand</span>
+<span class="highlight-lineno">46</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>        <span class="highlight-comment">///             Func&lt;![CDATA[&lt;]]&gt;int, int&gt; square = (int operand) =&gt; operand * operand;</span>
+<span class="highlight-lineno">47</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>        <span class="highlight-comment">/// </span>
+<span class="highlight-lineno">48</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>        <span class="highlight-comment">///             // Define an operand</span>
+<span class="highlight-lineno">49</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>        <span class="highlight-comment">///             int integer = 2;</span>
+<span class="highlight-lineno">50</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>        <span class="highlight-comment">/// </span>
+<span class="highlight-lineno">51</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>        <span class="highlight-comment">///             // Operate on it</span>
+<span class="highlight-lineno">52</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>        <span class="highlight-comment">///             Console.WriteLine("Squaring {0}...", integer);</span>
+<span class="highlight-lineno">53</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>        <span class="highlight-comment">///             int result = IntegerOperation.Operate(square, integer);</span>
+<span class="highlight-lineno">54</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>        <span class="highlight-comment">///             Console.WriteLine("...the result is {0}.", result);</span>
+<span class="highlight-lineno">55</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>        <span class="highlight-comment">/// </span>
+<span class="highlight-lineno">56</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>        <span class="highlight-comment">///             // Check that an operator cannot be null</span>
+<span class="highlight-lineno">57</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>        <span class="highlight-comment">///             try</span>
+<span class="highlight-lineno">58</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>        <span class="highlight-comment">///             {</span>
+<span class="highlight-lineno">59</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>        <span class="highlight-comment">///                 IntegerOperation.Operate(null, 0);</span>
+<span class="highlight-lineno">60</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>        <span class="highlight-comment">///             }</span>
+<span class="highlight-lineno">61</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>        <span class="highlight-comment">///             catch (Exception e)</span>
+<span class="highlight-lineno">62</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>        <span class="highlight-comment">///             {</span>
+<span class="highlight-lineno">63</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>        <span class="highlight-comment">///                 Console.WriteLine();</span>
+<span class="highlight-lineno">64</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>        <span class="highlight-comment">///                 Console.WriteLine("Cannot apply a null function:");</span>
+<span class="highlight-lineno">65</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>        <span class="highlight-comment">///                 Console.WriteLine(e.Message);</span>
+<span class="highlight-lineno">66</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>        <span class="highlight-comment">///             }</span>
+<span class="highlight-lineno">67</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>        <span class="highlight-comment">///         }</span>
+<span class="highlight-lineno">68</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>        <span class="highlight-comment">///     }</span>
+<span class="highlight-lineno">69</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>        <span class="highlight-comment">/// }</span>
+<span class="highlight-lineno">70</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>        <span class="highlight-comment">///  </span>
+<span class="highlight-lineno">71</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>        <span class="highlight-comment">/// // Executing method Main() produces the following output:</span>
+<span class="highlight-lineno">72</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>        <span class="highlight-comment">/// // </span>
+<span class="highlight-lineno">73</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>        <span class="highlight-comment">/// // Squaring 2...</span>
+<span class="highlight-lineno">74</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>        <span class="highlight-comment">/// // ...the result is 4.</span>
+<span class="highlight-lineno">75</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>        <span class="highlight-comment">/// // </span>
+<span class="highlight-lineno">76</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>        <span class="highlight-comment">/// // Cannot apply a null function:</span>
+<span class="highlight-lineno">77</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>        <span class="highlight-comment">/// // Value cannot be null.</span>
+<span class="highlight-lineno">78</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>        <span class="highlight-comment">/// // Parameter name: func</span>
+<span class="highlight-lineno">79</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>        <span class="highlight-comment">/// &lt;/code&gt;</span>
+<span class="highlight-lineno">80</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>        <span class="highlight-comment">/// &lt;/para&gt;</span>
+<span class="highlight-lineno">81</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>        <span class="highlight-comment">/// &lt;/example&gt;</span>
+<span class="highlight-lineno">82</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>        <span class="highlight-keyword">public</span> <span class="highlight-keyword">static</span> <span class="highlight-keyword">int</span> Operate(Func&lt;<span class="highlight-keyword">int</span>, <span class="highlight-keyword">int</span>&gt; func, <span class="highlight-keyword">int</span> operand)
+<span class="highlight-lineno">83</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>        {
+<span class="highlight-lineno">84</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>            <span class="highlight-keyword">if</span> (func==<span class="highlight-keyword">null</span>)
+<span class="highlight-lineno">85</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>            {
+<span class="highlight-lineno">86</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>                <span class="highlight-keyword">throw</span> <span class="highlight-keyword">new</span> ArgumentNullException(nameof(func));
+<span class="highlight-lineno">87</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>            }
+<span class="highlight-lineno">88</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>            <span class="highlight-keyword">return</span> func(operand);
+<span class="highlight-lineno">89</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>        }
+<span class="highlight-lineno">90</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>    }
+<span class="highlight-lineno">91</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>}</pre></div></div></div><script type="text/javascript">AddLanguageTabSet("ID0EABABAAA");</script><p>
+          Note how the <span class="code">IntegerOperation</span> class name
+          at line 8
+          has been highlighted.
+        </p></div></div></div><div id="pageFooter" class="pageFooter" /></body></html>

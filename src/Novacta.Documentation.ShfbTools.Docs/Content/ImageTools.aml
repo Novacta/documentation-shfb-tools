@@ -1,0 +1,316 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<topic id="2fb0ed9f-cfa1-4e3f-88fd-ce4de4abeea7" revisionNumber="1">
+  <developerConceptualDocument
+    xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5"
+    xmlns:xlink="http://www.w3.org/1999/xlink">
+
+    <introduction>
+      <para>
+        The instructions on this page are based on sample code that
+        demonstrates how to install the
+        <codeEntityReference qualifyHint="false">
+          T:Novacta.Documentation.ShfbTools.ImageTools
+        </codeEntityReference>,
+        and how to use them
+        to insert images in Sandcastle reference topics.
+      </para>
+      <para>
+        The sample is located
+        <externalLink>
+          <linkText>here</linkText>
+          <linkUri>
+            https://github.com/novacta/documentation-shfb-tools/blob/master/samples
+          </linkUri>
+        </externalLink>.
+      </para>
+      <para>
+        It includes what follows.
+      </para>
+      <list class="bullet">
+        <listItem>
+          <para>
+            Project
+            <externalLink>
+              <linkText>
+                ImageToolsInstaller
+              </linkText>
+              <linkUri>https://github.com/novacta/documentation-shfb-tools/blob/master/samples/ImageToolsInstaller</linkUri>
+            </externalLink>,
+            a console application that updates
+            a SHFB installation by adding the
+            <codeEntityReference qualifyHint="false">
+              T:Novacta.Documentation.ShfbTools.ImageTools
+            </codeEntityReference>.
+          </para>
+        </listItem>
+        <listItem>
+          <para>
+            Project
+            <externalLink>
+              <linkText>
+                SampleClassLibrary
+              </linkText>
+              <linkUri>https://github.com/novacta/documentation-shfb-tools/blob/master/samples/SampleClassLibrary</linkUri>
+            </externalLink>,
+            containing code to be documented
+            through XML comments, including some images managed by the tools.
+          </para>
+        </listItem>
+        <listItem>
+          <para>
+            Project
+            <externalLink>
+              <linkText>
+                SampleClassLibrary.Documentation
+              </linkText>
+              <linkUri>https://github.com/novacta/documentation-shfb-tools/blob/master/samples/SampleClassLibrary.Documentation</linkUri>
+            </externalLink>,
+            that generates the documentation for
+            <legacyBold>SampleClassLibrary</legacyBold>
+            exploiting the image tools.
+          </para>
+        </listItem>
+      </list>
+    </introduction>
+
+    <section address="sectionInstallImageTools">
+      <title>Installing the Image Tools</title>
+      <content>
+        <!--SUB-->
+        <para>
+          <legacyBold>Install the target version of SHFB</legacyBold>
+        </para>
+        <para></para>
+        <para>
+          Each release of
+          <legacyBold>Novacta.Documentation.ShfbTools</legacyBold>
+          targets a specific version of SHFB.
+          Such target version always matches
+          the version of the tools.
+        </para>
+        <para>
+          Make sure that the SHFB version targeted by the tools
+          is currently installed on your host machine.
+        </para>
+        <para>
+          You can download the required SHFB release
+          <externalLink>
+            <linkText>
+              here
+            </linkText>
+            <linkUri>https://github.com/EWSoftware/SHFB/releases</linkUri>
+          </externalLink>.
+        </para>
+        <!--SUB-->
+        <para></para>
+        <para>
+          <legacyBold>Add the Image Tools to SHFB</legacyBold>
+        </para>
+        <para></para>
+        <para>
+          Create a console application
+          targeting the
+          <externalLink>
+            <linkText>.NET Framework, version 4.6.2</linkText>
+            <linkUri>https://github.com/Microsoft/dotnet/blob/master/releases/net462/README.md</linkUri>
+          </externalLink>.
+          In this tutorial, such application is represented by
+          project
+          <externalLink>
+            <linkText>
+              ImageToolsInstaller
+            </linkText>
+            <linkUri>https://github.com/novacta/documentation-shfb-tools/blob/master/samples/ImageToolsInstaller</linkUri>
+          </externalLink>.
+        </para>
+        <para>
+          Add to your console project a reference to
+          the Novacta.Documentation.ShfbTools
+          <externalLink>
+            <linkText>NuGet package</linkText>
+            <linkUri>https://www.nuget.org/packages/Novacta.Documentation.ShfbTools</linkUri>
+          </externalLink>.
+          Remember that, at present, the tools are versioned as pre-release software.
+          Follow
+          <externalLink>
+            <linkText>these instructions</linkText>
+            <linkUri>
+              https://docs.microsoft.com/en-us/nuget/create-packages/prerelease-packages#installing-and-updating-pre-release-packages
+            </linkUri>
+          </externalLink> to include pre-release versions when installing the tools.
+        </para>
+        <para>
+          Request full administration permissions for the console application:
+          add to the project an <codeInline>app.manifest</codeInline> file as follows.
+        </para>
+        <code language="xml"
+              source="..\..\samples\ImageToolsInstaller\app.manifest"
+              title ="app.manifest">
+        </code>
+        <para>
+          In your <codeInline>Program</codeInline> class, 
+          the implementation of method
+          <codeInline>Main</codeInline>
+          should resemble what follows.
+        </para>
+
+        <code source="..\..\samples\ImageToolsInstaller\Program.cs"
+          language="cs" title="ImageToolsInstaller\Program.cs" />
+        <para>
+          When the application is executed, its console output shows
+          a report signaling if the installation was successful.
+          If failure conditions are reported, please act to remove them
+          and try again.
+        </para>
+      </content>
+    </section>
+
+    <section address="sectionManageImages">
+      <title>Managing images in reference topics</title>
+      <content>
+        <para>
+          SHFB documentation projects support the use of images in
+          conceptual topics by exploiting MAML
+          <externalLink>
+            <linkText>media elements</linkText>
+            <linkUri>http://ewsoftware.github.io/MAMLGuide/html/ba6a58eb-3301-4397-8ac5-d174d6dff755.htm</linkUri>
+          </externalLink>.
+          For example, in the documentation project
+          <externalLink>
+            <linkText>
+              SampleClassLibrary.Documentation
+            </linkText>
+            <linkUri>https://github.com/novacta/documentation-shfb-tools/blob/master/samples/SampleClassLibrary.Documentation</linkUri>
+          </externalLink>
+          the following conceptual topic refers to the image
+          <literal>
+            Function.png
+          </literal>
+          at line 34:
+        </para>
+        <code numberLines="true" source="..\..\samples\SampleClassLibrary.Documentation\Content\OperatingOnIntegers.aml"
+          language="xml" title="SampleClassLibrary.Documentation\Content\OperatingOnIntegers.aml" />
+        <para>
+          Note that the image file has been added to the sub-folder
+          <externalLink>
+            <linkText>
+              media
+            </linkText>
+            <linkUri>https://github.com/novacta/documentation-shfb-tools/blob/master/samples/SampleClassLibrary.Documentation/media</linkUri>
+          </externalLink>, and
+          its property
+          <literal>'Build Action'</literal> set to
+          <literal>'Image'</literal>.
+        </para>
+        <para>
+          Media elements are specific to conceptual topics.
+          However, provided that the property
+          <literal>'Copy To Media'</literal> of an image file
+          has been set to
+          <literal>'True'</literal>, then
+          the same image can also be inserted in Sandcastle
+          reference topics and managed by the
+          <codeEntityReference qualifyHint="false">
+            T:Novacta.Documentation.ShfbTools.ImageTools
+          </codeEntityReference>,
+          since they
+          introduce an analog
+          <codeInline><![CDATA[<image>]]></codeInline> element
+          which can be inserted in the XML
+          comments on your code:
+        </para>
+        <code language="xml">
+          <![CDATA[
+            <image>
+              <src>Function.png</src>
+              <alt>My function</alt>
+              <width>100%</width>
+            </image>        
+          ]]>
+        </code>
+        <para>
+          A nested element tagged
+          <codeInline><![CDATA[<src>]]></codeInline>
+          is mandatory, and defines the source of the image. Nested nodes tagged
+          <codeInline><![CDATA[<alt>]]></codeInline>
+          and
+          <codeInline><![CDATA[<width>]]></codeInline>,
+          used to specify image's alternate text and width,
+          are instead optional.
+          Such child elements correspond to attributes of the
+          <externalLink>
+            <linkText>
+              HTML <![CDATA[<img>]]>
+              element
+            </linkText>
+            <linkUri>https://www.w3schools.com/tags/tag_img.asp</linkUri>
+          </externalLink>
+          by which the images are actually represented in the outputted
+          documentation files.
+        </para>
+        <para>
+          More thoroughly,
+          <codeInline><![CDATA[<image>]]></codeInline> elements
+          are transformed in different ways,
+          depending on the available
+          <externalLink>
+            <linkText>presentation styles</linkText>
+            <linkUri>http://ewsoftware.github.io/SHFB/html/da405a33-3eeb-4451-9aa8-a55be5026434.htm#PresentationStyle</linkUri>
+          </externalLink>
+          and their corresponding
+          <externalLink>
+            <linkText>help file formats</linkText>
+            <linkUri>http://ewsoftware.github.io/SHFB/html/aed65695-6fb8-b9bc-7126-f8a52bf4f3f7.htm</linkUri>
+          </externalLink>.
+          For example, for styles
+          <literal>VS2010</literal> and <literal>VS2013</literal>
+          having <literal>Website</literal> as a help output,
+          the element discussed above is transformed into
+        </para>
+        <code language="xml">
+          <![CDATA[
+            <img src="../media/Function.png" alt ="My function" width="100%"></img>            
+          ]]>
+        </code>
+        <para>
+          while, for output
+          <literal>MsHelpViewer</literal>, it becomes
+        </para>
+        <code language="xml">
+          <![CDATA[
+            <img src="media/Function.png" alt ="My function" width="100%"></img>            
+          ]]>
+        </code>
+        <para>
+          As an example, the following file printout shows the source code for
+          type
+          <codeEntityReference qualifyHint="false">
+            T:SampleClassLibrary.IntegerOperation
+          </codeEntityReference>,
+          as defined in project
+          <externalLink>
+            <linkText>
+              SampleClassLibrary
+            </linkText>
+            <linkUri>https://github.com/novacta/documentation-shfb-tools/blob/master/samples/SampleClassLibrary</linkUri>
+          </externalLink>:
+        </para>
+        <code numberLines="true" source="..\..\samples\SampleClassLibrary\IntegerOperation.cs"
+         language="cs" title="SampleClassLibrary\IntegerOperation.cs" />
+        <para>
+          Note the <markup><![CDATA[<image>]]></markup> element at lines 27-31
+          in the XML comments on method
+          <legacyBold>Operate</legacyBold>.
+          You can check
+          <codeEntityReference linkText="here" qualifyHint="false">
+            M:SampleClassLibrary.IntegerOperation.Operate(System.Func{System.Int32,System.Int32},System.Int32)
+          </codeEntityReference>
+          how the
+          corresponding documentation looks like.
+        </para>
+      </content>
+    </section>
+    <relatedTopics>
+    </relatedTopics>
+  </developerConceptualDocument>
+</topic>

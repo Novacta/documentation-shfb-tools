@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<topic id="fe868fbe-1bfd-47f7-bf24-e1fd586864c6" revisionNumber="1">
+  <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <introduction>
+      <para>
+        <legacyBold>Novacta.Documentation.ShfbTools</legacyBold> is a .NET library
+        that enhances a Sandcastle Help File Builder installation in what
+        follows.
+      </para>
+      <list class="bullet">
+        <listItem>
+          <para>
+            Management of LaTeX equations in documentation files.
+          </para>
+        </listItem>
+        <listItem>
+          <para>
+            Support for inserting images
+            in Sandcastle reference topics.
+          </para>
+        </listItem>
+        <listItem>
+          <para>
+            Support for adding or removing families of class names
+            to be highlighted in code examples.
+          </para>
+        </listItem>
+      </list>
+      <para>
+        The project targets
+        the
+        <externalLink>
+          <linkText>.NET Framework, version 4.6.2</linkText>
+          <linkUri>https://github.com/Microsoft/dotnet/blob/master/releases/net462/README.md</linkUri>
+        </externalLink>.
+      </para>
+      <para>
+        The library is licensed under
+        the
+        <link xlink:href="77c2fac9-a810-4e5b-ba0e-afff50a42467">
+          MIT license
+        </link>.
+      </para>
+    </introduction>
+    <section>
+      <title>
+        Documentation
+      </title>
+      <content>
+        <para>
+          The current documentation includes the following topics.
+        </para>
+        <list class="bullet">
+          <listItem>
+            <para>
+              <link xlink:href="9a80a504-7209-460d-bb2f-e6bc80e46f69">
+                Novacta.Documentation.ShfbTools release notes
+              </link>
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              <link xlink:href="47a5afe5-726c-4f74-9ab1-90740bf0a692">
+                Adding LaTeX equations
+              </link> includes topics showing how to define LaTeX
+              content in documentation files.
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              <link xlink:href="2fb0ed9f-cfa1-4e3f-88fd-ce4de4abeea7">
+                Using images in reference topics
+              </link> describes how to show images
+              in Sandcastle reference documents.
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              <link xlink:href="eb942a1c-fe7a-4d81-a19f-15f1dd5dd0c6">
+                Highlighting class names
+              </link> walks you through the definition of class names
+              to be highlighted in code examples.
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              <link xlink:href="f1fb7d15-a64e-4b8f-b6b4-631d34e81ce5">
+                Testing the tools
+              </link> instructs about the setup required 
+              to test the SHFB tools.
+            </para>
+          </listItem>         
+          <listItem>
+            <para>
+              <codeEntityReference linkText="Library reference">
+                N:Novacta.Documentation.ShfbTools
+              </codeEntityReference>
+              contains reference information about library
+              types by namespace.
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              <codeEntityReference linkText="SampleClassLibrary Namespaces">
+                G:SampleClassLibrary
+              </codeEntityReference>
+              points to a sample documentation obtained
+              through the Novacta.Documentation.ShfbTools library.
+            </para>
+          </listItem>
+        </list>
+      </content>
+    </section>
+
+    <relatedTopics>
+      <link xlink:href="7abd97df-f098-4afa-9f9c-2255d3e61a33" />
+    </relatedTopics>
+  </developerConceptualDocument>
+</topic>

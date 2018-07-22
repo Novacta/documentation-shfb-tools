@@ -1,0 +1,540 @@
+﻿<html><head><meta http-equiv="X-UA-Compatible" content="IE=edge" /><link rel="shortcut icon" href="../icons/favicon.ico" /><link rel="stylesheet" type="text/css" href="../styles/branding.css" /><link rel="stylesheet" type="text/css" href="../styles/branding-en-US.css" /><script type="text/javascript" src="../scripts/branding.js">
+          </script><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>Adding LaTeX equations</title><meta name="Language" content="en-us" /><meta name="Microsoft.Help.Id" content="47a5afe5-726c-4f74-9ab1-90740bf0a692" /><meta name="Description" content="The instructions on this page are based on sample code that demonstrates how to install the T:Novacta.Documentation.ShfbTools.LatexTools , and how to use them to insert Latex content in documentation topics." /><meta name="Microsoft.Help.ContentType" content="Concepts" /><meta name="BrandingAware" content="true" /><link type="text/css" rel="stylesheet" href="../styles/highlight.css" /><script type="text/javascript" src="../scripts/highlight.js"> </script><link rel="stylesheet" type="text/css" href="../styles/branding-Website.css" /><script type="text/javascript" src="../scripts/jquery-1.11.0.min.js"></script><script type="text/javascript" src="../scripts/branding-Website.js"></script><script type="text/javascript" src="../scripts/clipboard.min.js"></script></head><body onload="OnLoad('cs')"><input type="hidden" id="userDataCache" class="userDataStyle" /><div class="pageHeader" id="PageHeader">Novacta.Documentation.ShfbTools Documentation<form id="SearchForm" method="get" action="#" onsubmit="javascript:TransferToSearchPage(); return false;"><input id="SearchTextBox" type="text" maxlength="200" /><button id="SearchButton" type="submit"></button></form></div><div class="pageBody"><div class="leftNav" id="leftNav"><div id="tocNav"><div class="toclevel0" data-toclevel="0" data-childrenloaded="true"><a class="tocExpanded" onclick="javascript: Toggle(this);" href="#!" /><a data-tochassubtree="true" href="../html\fe868fbe-1bfd-47f7-bf24-e1fd586864c6.htm" title="Novacta.Documentation.ShfbTools Documentation" tocid="roottoc">Novacta.Documentation.ShfbTools Documentation</a></div><div class="toclevel1" data-toclevel="1"><a data-tochassubtree="false" href="../html/fe868fbe-1bfd-47f7-bf24-e1fd586864c6.htm" title="Welcome" tocid="fe868fbe-1bfd-47f7-bf24-e1fd586864c6">Welcome</a></div><div class="toclevel1" data-toclevel="1"><a data-tochassubtree="false" href="../html/77c2fac9-a810-4e5b-ba0e-afff50a42467.htm" title="License agreement" tocid="77c2fac9-a810-4e5b-ba0e-afff50a42467">License agreement</a></div><div class="toclevel1 current" data-toclevel="1"><a data-tochassubtree="false" href="../html/47a5afe5-726c-4f74-9ab1-90740bf0a692.htm" title="Adding LaTeX equations" tocid="47a5afe5-726c-4f74-9ab1-90740bf0a692">Adding LaTeX equations</a></div><div class="toclevel1" data-toclevel="1"><a data-tochassubtree="false" href="../html/2fb0ed9f-cfa1-4e3f-88fd-ce4de4abeea7.htm" title="Using images in reference topics" tocid="2fb0ed9f-cfa1-4e3f-88fd-ce4de4abeea7">Using images in reference topics</a></div><div class="toclevel1" data-toclevel="1"><a data-tochassubtree="false" href="../html/eb942a1c-fe7a-4d81-a19f-15f1dd5dd0c6.htm" title="Highlighting class names" tocid="eb942a1c-fe7a-4d81-a19f-15f1dd5dd0c6">Highlighting class names</a></div><div class="toclevel1" data-toclevel="1"><a data-tochassubtree="false" href="../html/f1fb7d15-a64e-4b8f-b6b4-631d34e81ce5.htm" title="Testing the tools" tocid="f1fb7d15-a64e-4b8f-b6b4-631d34e81ce5">Testing the tools</a></div><div class="toclevel1" data-toclevel="1"><a class="tocCollapsed" onclick="javascript: Toggle(this);" href="#!" /><a data-tochassubtree="true" href="../html/7abd97df-f098-4afa-9f9c-2255d3e61a33.htm" title="Version History" tocid="7abd97df-f098-4afa-9f9c-2255d3e61a33">Version History</a></div><div class="toclevel1" data-toclevel="1"><a class="tocCollapsed" onclick="javascript: Toggle(this);" href="#!" /><a data-tochassubtree="true" href="../html/4678ffc8-bbaf-a1ac-fc8e-8ab105f12552.htm" title="Novacta.Documentation.ShfbTools" tocid="4678ffc8-bbaf-a1ac-fc8e-8ab105f12552">Novacta.Documentation.ShfbTools</a></div><div class="toclevel1" data-toclevel="1"><a class="tocCollapsed" onclick="javascript: Toggle(this);" href="#!" /><a data-tochassubtree="true" href="../html/3a466136-0a03-0104-bbf3-34b96985ddd8.htm" title="SampleClassLibrary Namespaces" tocid="3a466136-0a03-0104-bbf3-34b96985ddd8">SampleClassLibrary Namespaces</a></div></div><div id="tocResizableEW" onmousedown="OnMouseDown(event);"></div><div id="TocResize" class="tocResize"><img id="ResizeImageIncrease" src="../icons/TocOpen.gif" onclick="OnIncreaseToc()" alt="Click or drag to resize" title="Click or drag to resize" /><img id="ResizeImageReset" src="../icons/TocClose.gif" style="display:none" onclick="OnResetToc()" alt="Click or drag to resize" title="Click or drag to resize" /></div></div><div class="topicContent" id="TopicContent"><table class="titleTable"><tr><td class="logoColumn"><img src="../icons/Help.png" /></td><td class="titleColumn"><h1>Adding LaTeX equations</h1></td></tr></table><span class="introStyle"></span> <div class="introduction"><p>
+        The instructions on this page are based on sample code that
+        demonstrates how to install the
+        <a href="aba51c7e-31b7-3960-2885-289a1cd95caf.htm">LatexTools</a>,
+        and how to use them
+        to insert Latex content in documentation topics.
+      </p><p>
+        The sample is located
+        <a href="https://github.com/novacta/documentation-shfb-tools/blob/master/samples" target="_blank">here</a>.
+      </p><p>
+        It includes what follows.
+      </p><ul><li><p>
+            Project
+            <a href="https://github.com/novacta/documentation-shfb-tools/blob/master/samples/LatexToolsInstaller" target="_blank">LatexToolsInstaller</a>,
+            a console application that updates
+            a SHFB installation by adding the
+            <a href="aba51c7e-31b7-3960-2885-289a1cd95caf.htm">LatexTools</a>.
+          </p></li><li><p>
+            Project
+            <a href="https://github.com/novacta/documentation-shfb-tools/blob/master/samples/SampleClassLibrary" target="_blank">SampleClassLibrary</a>,
+            containing code to be documented
+            through XML comments, including some Latex equations.
+          </p></li><li><p>
+            Project
+            <a href="https://github.com/novacta/documentation-shfb-tools/blob/master/samples/SampleClassLibrary.Documentation" target="_blank">SampleClassLibrary.Documentation</a>,
+            that generates the documentation for
+            <strong>SampleClassLibrary</strong>
+            exploiting the Latex tools.
+          </p></li></ul></div><div class="collapsibleAreaRegion" id="sectionInstallLatexTools"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID1RB')" onkeypress="SectionExpandCollapse_CheckKey('ID1RB', event)" tabindex="0"><img id="ID1RBToggle" class="collapseToggle" src="../icons/SectionExpanded.png" />Installing the Latex Tools</span></div><div id="ID1RBSection" class="collapsibleSection"><p><strong>Install the target version of SHFB</strong></p><p /><p>
+          Each release of
+          <strong>Novacta.Documentation.ShfbTools</strong>
+          targets a specific version of SHFB.
+          Such target version always matches
+          the version of the tools.
+        </p><p>
+          Make sure that the SHFB version targeted by the tools
+          is currently installed on your host machine.
+        </p><p>
+          You can download the required SHFB release
+          <a href="https://github.com/EWSoftware/SHFB/releases" target="_blank">here</a>.
+        </p><p /><p><strong>Install a full LaTeX distribution</strong></p><p /><p>
+          You need a full TeX distribution installed on your host machine.
+          You can find a list of TeX implementations
+          <a href="http://www.tug.org/interest.html#free" target="_blank">here</a>.
+        </p><p>
+          In particular, the <strong>Novacta SHFB Latex Tools</strong>
+          have been tested using the
+          <a href="https://miktex.org/" target="_blank">MiKTeX distribution</a>.
+        </p><p /><p><strong>Add the Latex Tools to SHFB</strong></p><p /><p>
+          Create a console application
+          targeting the
+          <a href="https://github.com/Microsoft/dotnet/blob/master/releases/net462/README.md" target="_blank">.NET Framework, version 4.6.2</a>.
+          In this tutorial, such application is represented by
+          project
+          <a href="https://github.com/novacta/documentation-shfb-tools/blob/master/samples/LatexToolsInstaller" target="_blank">LatexToolsInstaller</a>.
+        </p><p>
+          Add to your console project a reference to
+          the Novacta.Documentation.ShfbTools
+          <a href="https://www.nuget.org/packages/Novacta.Documentation.ShfbTools" target="_blank">NuGet package</a>.
+          Remember that, at present, the tools are versioned as pre-release software.
+          Follow 
+          <a href="https://docs.microsoft.com/en-us/nuget/create-packages/prerelease-packages#installing-and-updating-pre-release-packages" target="_blank">these instructions</a> to include pre-release versions when installing the tools.
+        </p><p>
+          Request full administration permissions for the console application:
+          add to the project an <span class="code">app.manifest</span> file as follows.
+        </p><div class="codeSnippetContainer"><div class="codeSnippetContainerTabs"><div id="ID0EADAEAAA_tab1" class="codeSnippetContainerTabSingle">app.manifest</div></div><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetToolBar"><div class="codeSnippetToolBarText"><a id="ID0EADAEAAA_copyCode" href="#" class="copyCodeSnippet" onclick="javascript:CopyToClipboard('ID0EADAEAAA');return false;" title="Copy">Copy</a></div></div><div id="ID0EADAEAAA_code_Div1" class="codeSnippetContainerCode" style="display: block"><pre xml:space="preserve"><span class="highlight-xml-bracket">&lt;?</span><span class="highlight-xml-tag">xml</span> <span class="highlight-xml-attribute-name">version</span><span class="highlight-xml-attribute-equal">=</span><span class="highlight-xml-attribute-value">"1.0"</span> <span class="highlight-xml-attribute-name">encoding</span><span class="highlight-xml-attribute-equal">=</span><span class="highlight-xml-attribute-value">"utf-8"</span><span class="highlight-xml-bracket">?&gt;</span>
+<span class="highlight-xml-bracket">&lt;</span><span class="highlight-xml-tag">assembly</span> <span class="highlight-xml-attribute-name">manifestVersion</span><span class="highlight-xml-attribute-equal">=</span><span class="highlight-xml-attribute-value">"1.0"</span> <span class="highlight-xml-attribute-name">xmlns</span><span class="highlight-xml-attribute-equal">=</span><span class="highlight-xml-attribute-value">"urn:schemas-microsoft-com:asm.v1"</span><span class="highlight-xml-bracket">&gt;</span>
+  <span class="highlight-xml-bracket">&lt;</span><span class="highlight-xml-tag">assemblyIdentity</span> <span class="highlight-xml-attribute-name">version</span><span class="highlight-xml-attribute-equal">=</span><span class="highlight-xml-attribute-value">"1.0.0.0"</span> <span class="highlight-xml-attribute-name">name</span><span class="highlight-xml-attribute-equal">=</span><span class="highlight-xml-attribute-value">"MyApplication.app"</span><span class="highlight-xml-bracket">/&gt;</span>
+  <span class="highlight-xml-bracket">&lt;</span><span class="highlight-xml-tag">trustInfo</span> <span class="highlight-xml-attribute-name">xmlns</span><span class="highlight-xml-attribute-equal">=</span><span class="highlight-xml-attribute-value">"urn:schemas-microsoft-com:asm.v2"</span><span class="highlight-xml-bracket">&gt;</span>
+    <span class="highlight-xml-bracket">&lt;</span><span class="highlight-xml-tag">security</span><span class="highlight-xml-bracket">&gt;</span>
+      <span class="highlight-xml-bracket">&lt;</span><span class="highlight-xml-tag">requestedPrivileges</span> <span class="highlight-xml-attribute-name">xmlns</span><span class="highlight-xml-attribute-equal">=</span><span class="highlight-xml-attribute-value">"urn:schemas-microsoft-com:asm.v3"</span><span class="highlight-xml-bracket">&gt;</span>
+        <span class="highlight-xml-bracket">&lt;</span><span class="highlight-xml-tag">requestedExecutionLevel</span> <span class="highlight-xml-attribute-name">level</span><span class="highlight-xml-attribute-equal">=</span><span class="highlight-xml-attribute-value">"requireAdministrator"</span> <span class="highlight-xml-attribute-name">uiAccess</span><span class="highlight-xml-attribute-equal">=</span><span class="highlight-xml-attribute-value">"false"</span> <span class="highlight-xml-bracket">/&gt;</span>
+      <span class="highlight-xml-bracket">&lt;/</span><span class="highlight-xml-tag">requestedPrivileges</span><span class="highlight-xml-bracket">&gt;</span>
+    <span class="highlight-xml-bracket">&lt;/</span><span class="highlight-xml-tag">security</span><span class="highlight-xml-bracket">&gt;</span>
+  <span class="highlight-xml-bracket">&lt;/</span><span class="highlight-xml-tag">trustInfo</span><span class="highlight-xml-bracket">&gt;</span>
+
+  <span class="highlight-xml-bracket">&lt;</span><span class="highlight-xml-tag">compatibility</span> <span class="highlight-xml-attribute-name">xmlns</span><span class="highlight-xml-attribute-equal">=</span><span class="highlight-xml-attribute-value">"urn:schemas-microsoft-com:compatibility.v1"</span><span class="highlight-xml-bracket">&gt;</span>
+    <span class="highlight-xml-bracket">&lt;</span><span class="highlight-xml-tag">application</span><span class="highlight-xml-bracket">&gt;</span>
+    <span class="highlight-xml-bracket">&lt;/</span><span class="highlight-xml-tag">application</span><span class="highlight-xml-bracket">&gt;</span>
+  <span class="highlight-xml-bracket">&lt;/</span><span class="highlight-xml-tag">compatibility</span><span class="highlight-xml-bracket">&gt;</span>
+<span class="highlight-xml-bracket">&lt;/</span><span class="highlight-xml-tag">assembly</span><span class="highlight-xml-bracket">&gt;</span></pre></div></div></div><script type="text/javascript">AddLanguageTabSet("ID0EADAEAAA");</script><p>
+          In your <span class="code">Program</span> class,
+          the implementation of method
+          <span class="code">Main</span>
+          should resemble what follows.
+        </p><div class="codeSnippetContainer"><div class="codeSnippetContainerTabs"><div id="ID0EABAEAAA_tab1" class="codeSnippetContainerTabSingle">LatexToolsInstaller\Program.cs</div></div><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetToolBar"><div class="codeSnippetToolBarText"><a id="ID0EABAEAAA_copyCode" href="#" class="copyCodeSnippet" onclick="javascript:CopyToClipboard('ID0EABAEAAA');return false;" title="Copy">Copy</a></div></div><div id="ID0EABAEAAA_code_Div1" class="codeSnippetContainerCode" style="display: block"><pre xml:space="preserve"><span class="highlight-keyword">using</span> Novacta.Documentation.ShfbTools;
+<span class="highlight-keyword">using</span> System;
+
+<span class="highlight-keyword">namespace</span> LatexToolsInstaller
+{
+    <span class="highlight-keyword">class</span> Program
+    {
+        <span class="highlight-keyword">static</span> <span class="highlight-keyword">void</span> Main(<span class="highlight-keyword">string</span>[] args)
+        {
+            <span class="highlight-comment">// It is assumed that the version of SHFB</span>
+            <span class="highlight-comment">// targeted by the SHFB Tools</span>
+            <span class="highlight-comment">// is installed on the host machine.</span>
+
+            <span class="highlight-comment">// To install the Latex Tools.</span>
+            LatexTools.Install();
+
+            Console.ReadKey();
+        }
+    }
+}</pre></div></div></div><script type="text/javascript">AddLanguageTabSet("ID0EABAEAAA");</script><p>
+          When the application is executed, its console output shows
+          a report signaling if the installation was successful.
+          If failure conditions are reported, please act to remove them
+          and try again.
+        </p></div><div class="collapsibleAreaRegion" id="sectionConfigureLatexTools"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID2RB')" onkeypress="SectionExpandCollapse_CheckKey('ID2RB', event)" tabindex="0"><img id="ID2RBToggle" class="collapseToggle" src="../icons/SectionExpanded.png" />Configuring the Latex Tools</span></div><div id="ID2RBSection" class="collapsibleSection"><p><strong>The Novacta Latex extensions for SHFB</strong></p><p /><p>
+          The <a href="aba51c7e-31b7-3960-2885-289a1cd95caf.htm">LatexTools</a>
+          enable the representation of LaTeX equations
+          as images in SHFB documentation topics.
+          Supported image formats are
+          <a href="https://en.wikipedia.org/wiki/Portable_Network_Graphics" target="_blank">PNG</a> and
+          <a href="https://en.wikipedia.org/wiki/Scalable_Vector_Graphics" target="_blank">SVG</a>.
+        </p><p>
+          The SVG image file format is not
+          supported for presentation style <span class="literal">OpenXml</span>.
+        </p><p>
+          The <a href="aba51c7e-31b7-3960-2885-289a1cd95caf.htm">LatexTools</a> extend SHFB via
+          <a href="4ac876f1-f3aa-9ddf-8410-d94d6d365b9a.htm">ShfbLatexComponent</a>, which is
+          responsible to build
+          the image representations of the specified equations, and
+          <a href="07a8bf94-ac06-03e0-a79c-890b2ca68217.htm">ShfbLatexPlugIn</a>,
+          only needed to support the SVG
+          image file format for the  <span class="literal">MSHelpViewer</span>
+          help output.
+        </p><p /><p><strong>The SHFB LaTeX Component</strong></p><p /><p>
+          The
+          <a href="4ac876f1-f3aa-9ddf-8410-d94d6d365b9a.htm">ShfbLatexComponent</a>
+          must be added to a documentation project
+          in order to manage LaTeX content in documentation topics.
+        </p><p>
+          To such purpose, open the project properties and click on the
+          <strong>Components</strong> tab. From the list
+          of available components, select the one
+          referred to as
+          <em>LaTeX Component</em>
+          and click the <strong>Add</strong> button.
+          Now the Latex component is inserted in the list of the
+          components executed during
+          the build process of the documentation project.
+          Such list is showed on the right side
+          of the tab, as exemplified in the following figure.
+        </p><div class="mediaNear"><img alt="Latex Component" src="../media/LatexComponent.png" /></div><p>
+          Once the LaTeX component has been committed for execution,
+          it must be configured. By clicking the
+          <strong>Configure</strong> button, the following
+          pop-up window will be displayed.
+        </p><div class="mediaNear"><img alt="Latex Component Config" src="../media/LatexComponentConfig.png" /></div><p>
+          Through that window, configuration options can be set as follows.
+        </p><div class="tableSection"><div class="caption">LaTeX Component Configuration</div><table><tr><th><p>Option</p></th><th><p>Description</p></th></tr><tr><td><p><strong>
+                  Image file format
+                </strong></p></td><td><p>
+                Through this option, one of the
+                image formats supported for LaTeX
+                content representation can be selected.
+              </p></td></tr><tr><td id="Image-depth-correction"><p><strong>
+                  Image depth correction
+                </strong></p></td><td><p>
+                When a LaTeX element is in-lined,
+                then the corresponding image depth, i.e. the distance of the
+                bottom of the image from its baseline, must be modified in
+                order for the text represented in the image to have the same
+                baseline of the surrounding text.
+              </p><p>
+                The initial image depth is returned by the DviPng executable of
+                the LaTeX distribution. Then, the difference between such value and
+                that set for the <strong>Image Depth Correction</strong> option
+                is taken as the final image depth.
+                By default, the <strong>Image Depth Correction</strong> option
+                is set to <span class="literal">0</span>,
+                a value that works well for the default text size.
+              </p><p>
+                Such behavior can be overridden for each specific equation,
+                as discussed in the following section.
+              </p></td></tr><tr><td id="Image-scale-percentage"><p><strong>
+                  Image scale percentage
+                </strong></p></td><td><p>
+                This option controls the size of the text in a LaTeX equation.
+                The default value is <span class="literal">100</span>,
+                and is equivalent to apply the <span class="code">\normalsize</span>
+                text sizing LaTeX command while adopting
+                <span class="literal">10pt</span> as the size of the main font in the document.
+                Values other than
+                <span class="literal">100</span> modify the size,
+                but negative values are not allowed.
+              </p><p>
+                Such behavior can be overridden for each specific equation,
+                as discussed in the following section.
+              </p></td></tr><tr><td><p><strong>
+                  Redirect file processors
+                </strong></p></td><td><p>
+                If checked, this option enables the redirection of
+                LaTeX console outputs to the SHFB
+                Help Build Log Content.
+              </p></td></tr><tr><td><p><strong>
+                  LaTeX bin folder
+                </strong></p></td><td><p>
+                Through this option, you can specify the folder where
+                are contained the binary files of the installed
+                LaTeX distribution.
+              </p></td></tr><tr><td><p><strong>
+                  DviSvgm bin folder
+                </strong></p></td><td><p>
+                Through this option, you can specify the folder where
+                are contained the binary files of
+                <a href="http://dvisvgm.bplaced.net/" target="_blank">DviSvgm</a>,
+                a converter of DVI files to the SVG graphics format.
+              </p><p>
+                The converter has been added to several LaTeX distributions.
+                If the installed distribution includes the tool, you can
+                specify here the same path set for option
+                <strong>LaTeX bin folder</strong>.
+                Otherwise, you can download the converter
+                <a href="http://dvisvgm.bplaced.net/Downloads" target="_blank">here</a>,
+                save it in a folder and set the option
+                accordingly.
+              </p><p>
+                These binaries are only needed if you
+                select the SVG image file format.
+              </p></td></tr></table></div><p /><p><strong>The SHFB Latex Plug-In</strong></p><p /><p>
+          The
+          <a href="07a8bf94-ac06-03e0-a79c-890b2ca68217.htm">ShfbLatexPlugIn</a>
+          must be added to a documentation project
+          only if the project needs to support the SVG
+          image file format for the  <span class="literal">MSHelpViewer</span>
+          help output.
+        </p><p>
+          To do so, open the project properties and click on the
+          <strong>Plug-Ins</strong> tab. From the list
+          of available plug-ins, select the one
+          referred to as
+          <em>LaTeX Support in MS Help Viewer files - SVG Fix</em>
+          and click the <strong>Add</strong> button.
+          Now the Latex plug-in is inserted in the list of the
+          plug-ins executed during
+          the build process of the documentation project.
+          The plug-ins committed for execution are listed on the right side
+          of the tab, as exemplified in the following figure.
+        </p><div class="mediaNear"><img alt="Latex Plug In" src="../media/LatexPlugIn.png" /></div></div><div class="collapsibleAreaRegion" id="sectionAddLatexContentToXmlComments"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID3RB')" onkeypress="SectionExpandCollapse_CheckKey('ID3RB', event)" tabindex="0"><img id="ID3RBToggle" class="collapseToggle" src="../icons/SectionExpanded.png" />Using LaTeX equations in XML comments</span></div><div id="ID3RBSection" class="collapsibleSection"><p>
+          LaTeX equations can be added to the XML comments on your
+          source code by inserting custom XML elements, referred
+          to as the <em>LaTeX</em> elements.
+        </p><p>
+          The start-tag of such elements
+          is <span class="code">&lt;latex&gt;</span>.
+          The basic form of a <em>LaTeX</em> element,
+          i.e. a form with no XML
+          attributes, is as follows.
+        </p><div class="codeSnippetContainer"><div class="codeSnippetContainerTabs"><div id="ID0EAOACAAA_tab1" class="codeSnippetContainerTabSingle">XML</div></div><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetToolBar"><div class="codeSnippetToolBarText"><a id="ID0EAOACAAA_copyCode" href="#" class="copyCodeSnippet" onclick="javascript:CopyToClipboard('ID0EAOACAAA');return false;" title="Copy">Copy</a></div></div><div id="ID0EAOACAAA_code_Div1" class="codeSnippetContainerCode" style="display: block"><pre xml:space="preserve"><span class="highlight-xml-bracket">&lt;</span><span class="highlight-xml-tag">latex</span><span class="highlight-xml-bracket">&gt;</span>X_{(0)}=2^{-1/3}<span class="highlight-xml-bracket">&lt;/</span><span class="highlight-xml-tag">latex</span><span class="highlight-xml-bracket">&gt;</span></pre></div></div></div><script type="text/javascript">AddLanguageTabSet("ID0EAOACAAA");</script><p>
+          When <em>LaTeX</em> elements are processed,
+          their content is interpreted as having document class
+          <strong>article</strong>,
+          with an option of
+          <strong>10pt</strong> for the size of the
+          main font in the document, and the
+          <span class="code">\pagestyle</span> set to
+          <span class="literal">empty</span>. You can also
+          assume as available the packages
+          <a href="https://ctan.org/pkg/amsmath" target="_blank">amsmath</a>
+          and
+          <a href="http://www.ams.org/tex/amsfonts.html" target="_blank">amsfonts</a>.
+        </p><p>
+          When the latex element is in basic form, its content
+          is interpreted as inserted in a displayed mathematical
+          environment (separated by the main text), and sized
+          applying the <span class="code">\normalsize</span> LaTeX command.
+        </p><p>
+          Such behavior can be overridden by adding attributes
+          to the latex element. If you want a LaTeX formula displayed in-line,
+          that is, within the body of text where it is declared,
+          you can add a <span class="code">mode</span> attribute
+          having the <span class="literal">"inline"</span> value, as in the following
+          example.
+        </p><div class="codeSnippetContainer"><div class="codeSnippetContainerTabs"><div id="ID0EAKACAAA_tab1" class="codeSnippetContainerTabSingle">C#</div></div><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetToolBar"><div class="codeSnippetToolBarText"><a id="ID0EAKACAAA_copyCode" href="#" class="copyCodeSnippet" onclick="javascript:CopyToClipboard('ID0EAKACAAA');return false;" title="Copy">Copy</a></div></div><div id="ID0EAKACAAA_code_Div1" class="codeSnippetContainerCode" style="display: block"><pre xml:space="preserve"><span class="highlight-comment">/// Let us assume that the random variable</span>
+<span class="highlight-comment">/// &lt;latex mode="inline"&gt;Y_{i}&lt;/latex&gt; has distribution function</span>
+<span class="highlight-comment">/// &lt;latex mode="inline"&gt;F_{Y_{i}}&lt;/latex&gt;.</span></pre></div></div></div><script type="text/javascript">AddLanguageTabSet("ID0EAKACAAA");</script><p>
+          If a <em>LaTeX</em>  element has
+          no <span class="code">mode</span> attribute, then its
+          mode defaults to value <span class="literal">"display"</span>.
+        </p><p>
+          The Novacta
+          <a href="4ac876f1-f3aa-9ddf-8410-d94d6d365b9a.htm">ShfbLatexComponent</a>
+          inserts images in help files
+          to represent your equations.
+          When
+          a <em>LaTeX</em> element is in-lined,
+          then the corresponding image
+          depth is, by default, set according to the
+          <a href="#Image-depth-correction">
+            Image depth correction
+          </a>
+          configuration option.
+          However, the image depth for a given
+          <em>LaTeX</em> element
+          can be hard coded by adding a <span class="code">depth</span> attribute,
+          as in the following example.
+        </p><div class="codeSnippetContainer"><div class="codeSnippetContainerTabs"><div id="ID0EAHACAAA_tab1" class="codeSnippetContainerTabSingle">XML</div></div><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetToolBar"><div class="codeSnippetToolBarText"><a id="ID0EAHACAAA_copyCode" href="#" class="copyCodeSnippet" onclick="javascript:CopyToClipboard('ID0EAHACAAA');return false;" title="Copy">Copy</a></div></div><div id="ID0EAHACAAA_code_Div1" class="codeSnippetContainerCode" style="display: block"><pre xml:space="preserve"><span class="highlight-xml-bracket">&lt;</span><span class="highlight-xml-tag">latex</span> <span class="highlight-xml-attribute-name">depth</span><span class="highlight-xml-attribute-equal">=</span><span class="highlight-xml-attribute-value">"10"</span><span class="highlight-xml-bracket">&gt;</span>F_{Y_{i}}<span class="highlight-xml-bracket">&lt;/</span><span class="highlight-xml-tag">latex</span><span class="highlight-xml-bracket">&gt;</span></pre></div></div></div><script type="text/javascript">AddLanguageTabSet("ID0EAHACAAA");</script><p>
+          In a <em>LaTeX</em> element,
+          the size of the text is controlled, by default,
+          through the
+          <a href="#Image-scale-percentage">
+            Image scale percentage
+          </a>
+          configuration option.
+          However, the size of a given
+          <em>LaTeX</em> element can be
+          overridden by adding to it
+          a <span class="code">scale</span> attribute.
+          For example, if you want its size being the
+          <span class="literal">70%</span> of the basic size, you can write
+          a <em>LaTeX</em> element as follows.
+        </p><div class="codeSnippetContainer"><div class="codeSnippetContainerTabs"><div id="ID0EAFACAAA_tab1" class="codeSnippetContainerTabSingle">XML</div></div><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetToolBar"><div class="codeSnippetToolBarText"><a id="ID0EAFACAAA_copyCode" href="#" class="copyCodeSnippet" onclick="javascript:CopyToClipboard('ID0EAFACAAA');return false;" title="Copy">Copy</a></div></div><div id="ID0EAFACAAA_code_Div1" class="codeSnippetContainerCode" style="display: block"><pre xml:space="preserve"><span class="highlight-xml-bracket">&lt;</span><span class="highlight-xml-tag">latex</span> <span class="highlight-xml-attribute-name">scale</span><span class="highlight-xml-attribute-equal">=</span><span class="highlight-xml-attribute-value">"scriptsize"</span><span class="highlight-xml-bracket">&gt;</span>F_{Y_{i}}<span class="highlight-xml-bracket">&lt;/</span><span class="highlight-xml-tag">latex</span><span class="highlight-xml-bracket">&gt;</span></pre></div></div></div><script type="text/javascript">AddLanguageTabSet("ID0EAFACAAA");</script><p>
+          More thoroughly, you can set the value of the
+          <span class="code">scale</span> attribute
+          using any of the predefined values shown in the following table,
+          where the corresponding percentages are also reported.
+        </p><div class="tableSection"><div class="caption">Scaling LaTeX Equations</div><table><tr><th><p>Predefined LaTeX size</p></th><th><p>Percentage</p></th><th><p>Example</p></th></tr><tr><td><p><strong>
+                  tiny
+                </strong></p></td><td><p>
+                50
+              </p></td><td><p><img alt="LaTeX equation" src="../media/clatex_0.svg" style="vertical-align: -3px" /></p></td></tr><tr><td><p><strong>
+                  scriptsize
+                </strong></p></td><td><p>
+                70
+              </p></td><td><p><img alt="LaTeX equation" src="../media/clatex_1.svg" style="vertical-align: -5px" /></p></td></tr><tr><td><p><strong>
+                  footnotesize
+                </strong></p></td><td><p>
+                80
+              </p></td><td><p><img alt="LaTeX equation" src="../media/clatex_2.svg" style="vertical-align: -5px" /></p></td></tr><tr><td><p><strong>
+                  small
+                </strong></p></td><td><p>
+                90
+              </p></td><td><p><img alt="LaTeX equation" src="../media/clatex_3.svg" style="vertical-align: -6px" /></p></td></tr><tr><td><p><strong>
+                  normalsize
+                </strong></p></td><td><p>
+                100
+              </p></td><td><p><img alt="LaTeX equation" src="../media/clatex_4.svg" style="vertical-align: -7px" /></p></td></tr><tr><td><p><strong>
+                  large
+                </strong></p></td><td><p>
+                120
+              </p></td><td><p><img alt="LaTeX equation" src="../media/clatex_5.svg" style="vertical-align: -8px" /></p></td></tr><tr><td><p><strong>
+                  Large
+                </strong></p></td><td><p>
+                144
+              </p></td><td><p><img alt="LaTeX equation" src="../media/clatex_6.svg" style="vertical-align: -9px" /></p></td></tr><tr><td><p><strong>
+                  LARGE
+                </strong></p></td><td><p>
+                172.8
+              </p></td><td><p><img alt="LaTeX equation" src="../media/clatex_7.svg" style="vertical-align: -11px" /></p></td></tr><tr><td><p><strong>
+                  huge
+                </strong></p></td><td><p>
+                207.4
+              </p></td><td><p><img alt="LaTeX equation" src="../media/clatex_8.svg" style="vertical-align: -12px" /></p></td></tr><tr><td><p><strong>
+                  Huge
+                </strong></p></td><td><p>
+                248.8
+              </p></td><td><p><img alt="LaTeX equation" src="../media/clatex_9.svg" style="vertical-align: -14px" /></p></td></tr></table></div><p>
+          As an example, the following file printout shows the source code for
+          type
+          <a href="07ae9d09-40d5-f692-6d0e-74c286693c03.htm">IntegerOperation</a>,
+          as defined in project
+          <a href="https://github.com/novacta/documentation-shfb-tools/blob/master/samples/SampleClassLibrary" target="_blank">SampleClassLibrary</a>:
+        </p><div class="codeSnippetContainer"><div class="codeSnippetContainerTabs"><div id="ID0EABACAAA_tab1" class="codeSnippetContainerTabSingle">SampleClassLibrary\IntegerOperation.cs</div></div><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetToolBar"><div class="codeSnippetToolBarText"><a id="ID0EABACAAA_copyCode" href="#" class="copyCodeSnippet" onclick="javascript:CopyToClipboard('ID0EABACAAA');return false;" title="Copy">Copy</a></div></div><div id="ID0EABACAAA_code_Div1" class="codeSnippetContainerCode" style="display: block"><pre xml:space="preserve"><span class="highlight-lineno"> 1</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span><span class="highlight-keyword">using</span> System;
+<span class="highlight-lineno"> 2</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>
+<span class="highlight-lineno"> 3</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span><span class="highlight-keyword">namespace</span> SampleClassLibrary
+<span class="highlight-lineno"> 4</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>{
+<span class="highlight-lineno"> 5</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>    <span class="highlight-comment">/// &lt;summary&gt;</span>
+<span class="highlight-lineno"> 6</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>    <span class="highlight-comment">/// Provides a method to operate on integers.</span>
+<span class="highlight-lineno"> 7</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>    <span class="highlight-comment">/// &lt;/summary&gt;</span>
+<span class="highlight-lineno"> 8</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>    <span class="highlight-keyword">public</span> <span class="highlight-keyword">static</span> <span class="highlight-keyword">class</span> <span class="highlight-class-name">IntegerOperation</span>
+<span class="highlight-lineno"> 9</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>    {
+<span class="highlight-lineno">10</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>        <span class="highlight-comment">/// &lt;summary&gt;</span>
+<span class="highlight-lineno">11</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>        <span class="highlight-comment">/// Applies the specified function to the given operand.</span>
+<span class="highlight-lineno">12</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>        <span class="highlight-comment">/// &lt;/summary&gt;</span>
+<span class="highlight-lineno">13</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>        <span class="highlight-comment">/// &lt;param name="func"&gt;The function.&lt;/param&gt;</span>
+<span class="highlight-lineno">14</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>        <span class="highlight-comment">/// &lt;param name="operand"&gt;The operand.&lt;/param&gt;</span>
+<span class="highlight-lineno">15</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>        <span class="highlight-comment">/// &lt;returns&gt;The result of the operation.&lt;/returns&gt;</span>
+<span class="highlight-lineno">16</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>        <span class="highlight-comment">/// &lt;exception cref="ArgumentNullException"&gt;</span>
+<span class="highlight-lineno">17</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>        <span class="highlight-comment">/// &lt;paramref name="func"/&gt; is &lt;b&gt;null&lt;/b&gt;.&lt;/exception&gt;</span>
+<span class="highlight-lineno">18</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>        <span class="highlight-comment">/// &lt;example&gt;</span>
+<span class="highlight-lineno">19</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>        <span class="highlight-comment">/// &lt;para&gt;</span>
+<span class="highlight-lineno">20</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>        <span class="highlight-comment">/// In the following example, the applied function, say </span>
+<span class="highlight-lineno">21</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>        <span class="highlight-comment">/// &lt;latex mode='inline'&gt;f:\mathbb{N}\rightarrow \mathbb{N},&lt;/latex&gt; is defined as</span>
+<span class="highlight-lineno">22</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>        <span class="highlight-comment">/// &lt;latex mode='display'&gt;</span>
+<span class="highlight-lineno">23</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>        <span class="highlight-comment">/// \forall n \in \mathbb{N}: n \mapsto f\left(n\right)=n^2.</span>
+<span class="highlight-lineno">24</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>        <span class="highlight-comment">/// &lt;/latex&gt;</span>
+<span class="highlight-lineno">25</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>        <span class="highlight-comment">/// A plot of such function is displayed in the following</span>
+<span class="highlight-lineno">26</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>        <span class="highlight-comment">/// figure.</span>
+<span class="highlight-lineno">27</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>        <span class="highlight-comment">/// &lt;image&gt;</span>
+<span class="highlight-lineno">28</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>        <span class="highlight-comment">/// &lt;alt&gt;A function.&lt;/alt&gt;</span>
+<span class="highlight-lineno">29</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>        <span class="highlight-comment">/// &lt;src&gt;Function.png&lt;/src&gt;</span>
+<span class="highlight-lineno">30</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>        <span class="highlight-comment">/// &lt;width&gt;100%&lt;/width&gt;</span>
+<span class="highlight-lineno">31</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>        <span class="highlight-comment">/// &lt;/image&gt;</span>
+<span class="highlight-lineno">32</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>        <span class="highlight-comment">/// An integer is thus squared </span>
+<span class="highlight-lineno">33</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>        <span class="highlight-comment">/// executing the &lt;see cref="Operate(Func{int, int}, int)"/&gt; method.</span>
+<span class="highlight-lineno">34</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>        <span class="highlight-comment">/// In addition, input validation is also checked.</span>
+<span class="highlight-lineno">35</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>        <span class="highlight-comment">/// &lt;/para&gt;</span>
+<span class="highlight-lineno">36</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>        <span class="highlight-comment">/// &lt;para&gt;</span>
+<span class="highlight-lineno">37</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>        <span class="highlight-comment">/// &lt;code language="cs"&gt;</span>
+<span class="highlight-lineno">38</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>        <span class="highlight-comment">/// using System;</span>
+<span class="highlight-lineno">39</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>        <span class="highlight-comment">/// namespace SampleClassLibrary.CodeExamples</span>
+<span class="highlight-lineno">40</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>        <span class="highlight-comment">/// {</span>
+<span class="highlight-lineno">41</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>        <span class="highlight-comment">///     public class IntegerOperationExample</span>
+<span class="highlight-lineno">42</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>        <span class="highlight-comment">///     {</span>
+<span class="highlight-lineno">43</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>        <span class="highlight-comment">///         public void Main()</span>
+<span class="highlight-lineno">44</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>        <span class="highlight-comment">///         {</span>
+<span class="highlight-lineno">45</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>        <span class="highlight-comment">///             // Define an operator that squares its operand</span>
+<span class="highlight-lineno">46</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>        <span class="highlight-comment">///             Func&lt;![CDATA[&lt;]]&gt;int, int&gt; square = (int operand) =&gt; operand * operand;</span>
+<span class="highlight-lineno">47</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>        <span class="highlight-comment">/// </span>
+<span class="highlight-lineno">48</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>        <span class="highlight-comment">///             // Define an operand</span>
+<span class="highlight-lineno">49</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>        <span class="highlight-comment">///             int integer = 2;</span>
+<span class="highlight-lineno">50</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>        <span class="highlight-comment">/// </span>
+<span class="highlight-lineno">51</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>        <span class="highlight-comment">///             // Operate on it</span>
+<span class="highlight-lineno">52</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>        <span class="highlight-comment">///             Console.WriteLine("Squaring {0}...", integer);</span>
+<span class="highlight-lineno">53</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>        <span class="highlight-comment">///             int result = IntegerOperation.Operate(square, integer);</span>
+<span class="highlight-lineno">54</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>        <span class="highlight-comment">///             Console.WriteLine("...the result is {0}.", result);</span>
+<span class="highlight-lineno">55</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>        <span class="highlight-comment">/// </span>
+<span class="highlight-lineno">56</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>        <span class="highlight-comment">///             // Check that an operator cannot be null</span>
+<span class="highlight-lineno">57</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>        <span class="highlight-comment">///             try</span>
+<span class="highlight-lineno">58</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>        <span class="highlight-comment">///             {</span>
+<span class="highlight-lineno">59</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>        <span class="highlight-comment">///                 IntegerOperation.Operate(null, 0);</span>
+<span class="highlight-lineno">60</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>        <span class="highlight-comment">///             }</span>
+<span class="highlight-lineno">61</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>        <span class="highlight-comment">///             catch (Exception e)</span>
+<span class="highlight-lineno">62</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>        <span class="highlight-comment">///             {</span>
+<span class="highlight-lineno">63</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>        <span class="highlight-comment">///                 Console.WriteLine();</span>
+<span class="highlight-lineno">64</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>        <span class="highlight-comment">///                 Console.WriteLine("Cannot apply a null function:");</span>
+<span class="highlight-lineno">65</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>        <span class="highlight-comment">///                 Console.WriteLine(e.Message);</span>
+<span class="highlight-lineno">66</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>        <span class="highlight-comment">///             }</span>
+<span class="highlight-lineno">67</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>        <span class="highlight-comment">///         }</span>
+<span class="highlight-lineno">68</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>        <span class="highlight-comment">///     }</span>
+<span class="highlight-lineno">69</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>        <span class="highlight-comment">/// }</span>
+<span class="highlight-lineno">70</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>        <span class="highlight-comment">///  </span>
+<span class="highlight-lineno">71</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>        <span class="highlight-comment">/// // Executing method Main() produces the following output:</span>
+<span class="highlight-lineno">72</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>        <span class="highlight-comment">/// // </span>
+<span class="highlight-lineno">73</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>        <span class="highlight-comment">/// // Squaring 2...</span>
+<span class="highlight-lineno">74</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>        <span class="highlight-comment">/// // ...the result is 4.</span>
+<span class="highlight-lineno">75</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>        <span class="highlight-comment">/// // </span>
+<span class="highlight-lineno">76</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>        <span class="highlight-comment">/// // Cannot apply a null function:</span>
+<span class="highlight-lineno">77</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>        <span class="highlight-comment">/// // Value cannot be null.</span>
+<span class="highlight-lineno">78</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>        <span class="highlight-comment">/// // Parameter name: func</span>
+<span class="highlight-lineno">79</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>        <span class="highlight-comment">/// &lt;/code&gt;</span>
+<span class="highlight-lineno">80</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>        <span class="highlight-comment">/// &lt;/para&gt;</span>
+<span class="highlight-lineno">81</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>        <span class="highlight-comment">/// &lt;/example&gt;</span>
+<span class="highlight-lineno">82</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>        <span class="highlight-keyword">public</span> <span class="highlight-keyword">static</span> <span class="highlight-keyword">int</span> Operate(Func&lt;<span class="highlight-keyword">int</span>, <span class="highlight-keyword">int</span>&gt; func, <span class="highlight-keyword">int</span> operand)
+<span class="highlight-lineno">83</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>        {
+<span class="highlight-lineno">84</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>            <span class="highlight-keyword">if</span> (func==<span class="highlight-keyword">null</span>)
+<span class="highlight-lineno">85</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>            {
+<span class="highlight-lineno">86</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>                <span class="highlight-keyword">throw</span> <span class="highlight-keyword">new</span> ArgumentNullException(nameof(func));
+<span class="highlight-lineno">87</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>            }
+<span class="highlight-lineno">88</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>            <span class="highlight-keyword">return</span> func(operand);
+<span class="highlight-lineno">89</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>        }
+<span class="highlight-lineno">90</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>    }
+<span class="highlight-lineno">91</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>}</pre></div></div></div><script type="text/javascript">AddLanguageTabSet("ID0EABACAAA");</script><p>
+          Note the <em>LaTeX</em> elements at line 21-24
+          in the XML comments on method
+          <strong>Operate</strong>.
+          You can check
+          <a href="08c1580c-1970-64e0-3271-ad07ae38cffc.htm">here</a>
+          how the
+          corresponding documentation looks like.
+        </p></div><div class="collapsibleAreaRegion" id="sectionAddLatexContentToCOnceptualTopics"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID4RB')" onkeypress="SectionExpandCollapse_CheckKey('ID4RB', event)" tabindex="0"><img id="ID4RBToggle" class="collapseToggle" src="../icons/SectionExpanded.png" />Using LaTeX equations in conceptual topics</span></div><div id="ID4RBSection" class="collapsibleSection"><p>
+          Elements in
+          <a href="http://ewsoftware.github.io/MAMLGuide" target="_blank">MAML</a>
+          conceptual topics must be qualified using a namespace.
+          To qualify <em>LaTeX</em> elements,
+          add to the topic's document element a namespace attribute
+          associated with prefix <span class="code">ltx</span>,
+          as shown in the following example.
+        </p><div class="codeSnippetContainer"><div class="codeSnippetContainerTabs"><div id="ID0EAFABAAA_tab1" class="codeSnippetContainerTabSingle">XML</div></div><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetToolBar"><div class="codeSnippetToolBarText"><a id="ID0EAFABAAA_copyCode" href="#" class="copyCodeSnippet" onclick="javascript:CopyToClipboard('ID0EAFABAAA');return false;" title="Copy">Copy</a></div></div><div id="ID0EAFABAAA_code_Div1" class="codeSnippetContainerCode" style="display: block"><pre xml:space="preserve"><span class="highlight-xml-bracket">&lt;</span><span class="highlight-xml-tag">topic</span> <span class="highlight-xml-attribute-name">id</span><span class="highlight-xml-attribute-equal">=</span><span class="highlight-xml-attribute-value">"303c996a-2911-4c08-b492-6496c82b3edb"</span> <span class="highlight-xml-attribute-name">revisionNumber</span><span class="highlight-xml-attribute-equal">=</span><span class="highlight-xml-attribute-value">"1"</span><span class="highlight-xml-bracket">&gt;</span>
+  <span class="highlight-xml-comment">&lt;!-- This element name will change based on the document type --&gt;</span>
+  <span class="highlight-xml-bracket">&lt;</span><span class="highlight-xml-tag">developerConceptualDocument</span>
+    <span class="highlight-xml-attribute-name">xmlns</span><span class="highlight-xml-attribute-equal">=</span><span class="highlight-xml-attribute-value">"http://ddue.schemas.microsoft.com/authoring/2003/5"</span>
+    <span class="highlight-xml-attribute-name">xmlns:xlink</span><span class="highlight-xml-attribute-equal">=</span><span class="highlight-xml-attribute-value">"http://www.w3.org/1999/xlink"</span>
+    <span class="highlight-xml-attribute-name">xmlns:ltx</span><span class="highlight-xml-attribute-equal">=</span><span class="highlight-xml-attribute-value">"http://www.novacta.net/2018/XSL/ShfbLatexTools"</span><span class="highlight-xml-bracket">&gt;</span>
+
+    <span class="highlight-xml-comment">&lt;!-- The content goes here --&gt;</span>
+
+  <span class="highlight-xml-bracket">&lt;/</span><span class="highlight-xml-tag">developerConceptualDocument</span><span class="highlight-xml-bracket">&gt;</span>
+<span class="highlight-xml-bracket">&lt;/</span><span class="highlight-xml-tag">topic</span><span class="highlight-xml-bracket">&gt;</span></pre></div></div></div><script type="text/javascript">AddLanguageTabSet("ID0EAFABAAA");</script><p>
+          Now <em>LaTeX</em> elements can be added
+          by prefixing their tags with <span class="code">ltx</span>,
+          as follows.
+        </p><div class="codeSnippetContainer"><div class="codeSnippetContainerTabs"><div id="ID0EADABAAA_tab1" class="codeSnippetContainerTabSingle">XML</div></div><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetToolBar"><div class="codeSnippetToolBarText"><a id="ID0EADABAAA_copyCode" href="#" class="copyCodeSnippet" onclick="javascript:CopyToClipboard('ID0EADABAAA');return false;" title="Copy">Copy</a></div></div><div id="ID0EADABAAA_code_Div1" class="codeSnippetContainerCode" style="display: block"><pre xml:space="preserve"><span class="highlight-xml-bracket">&lt;</span><span class="highlight-xml-tag">ltx:latex</span> <span class="highlight-xml-attribute-name">scale</span><span class="highlight-xml-attribute-equal">=</span><span class="highlight-xml-attribute-value">"LARGE"</span> <span class="highlight-xml-attribute-name">mode</span><span class="highlight-xml-attribute-equal">=</span><span class="highlight-xml-attribute-value">"inline"</span><span class="highlight-xml-bracket">&gt;</span>X_{(0)}<span class="highlight-xml-bracket">&lt;/</span><span class="highlight-xml-tag">ltx:latex</span><span class="highlight-xml-bracket">&gt;</span></pre></div></div></div><script type="text/javascript">AddLanguageTabSet("ID0EADABAAA");</script><p>
+          As an example, the following file printout shows the source code for
+          a conceptual topic about
+          <a href="07ae9d09-40d5-f692-6d0e-74c286693c03.htm">IntegerOperation</a>,
+          as defined in project
+          <a href="https://github.com/novacta/documentation-shfb-tools/blob/master/samples/SampleClassLibrary" target="_blank">SampleClassLibrary</a>:
+        </p><div class="codeSnippetContainer"><div class="codeSnippetContainerTabs"><div id="ID0EABABAAA_tab1" class="codeSnippetContainerTabSingle">SampleClassLibrary.Documentation\Content\OperatingOnIntegers.aml</div></div><div class="codeSnippetContainerCodeContainer"><div class="codeSnippetToolBar"><div class="codeSnippetToolBarText"><a id="ID0EABABAAA_copyCode" href="#" class="copyCodeSnippet" onclick="javascript:CopyToClipboard('ID0EABABAAA');return false;" title="Copy">Copy</a></div></div><div id="ID0EABABAAA_code_Div1" class="codeSnippetContainerCode" style="display: block"><pre xml:space="preserve"><span class="highlight-lineno"> 1</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span><span class="highlight-xml-bracket">&lt;?</span><span class="highlight-xml-tag">xml</span> <span class="highlight-xml-attribute-name">version</span><span class="highlight-xml-attribute-equal">=</span><span class="highlight-xml-attribute-value">"1.0"</span> <span class="highlight-xml-attribute-name">encoding</span><span class="highlight-xml-attribute-equal">=</span><span class="highlight-xml-attribute-value">"utf-8"</span><span class="highlight-xml-bracket">?&gt;</span>
+<span class="highlight-lineno"> 2</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span><span class="highlight-xml-bracket">&lt;</span><span class="highlight-xml-tag">topic</span> <span class="highlight-xml-attribute-name">id</span><span class="highlight-xml-attribute-equal">=</span><span class="highlight-xml-attribute-value">"b10d4d75-3729-4247-a58a-b9e5b6e4bb4d"</span> <span class="highlight-xml-attribute-name">revisionNumber</span><span class="highlight-xml-attribute-equal">=</span><span class="highlight-xml-attribute-value">"1"</span><span class="highlight-xml-bracket">&gt;</span>
+<span class="highlight-lineno"> 3</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>  <span class="highlight-xml-bracket">&lt;</span><span class="highlight-xml-tag">developerConceptualDocument</span>
+<span class="highlight-lineno"> 4</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>    <span class="highlight-xml-attribute-name">xmlns</span><span class="highlight-xml-attribute-equal">=</span><span class="highlight-xml-attribute-value">"http://ddue.schemas.microsoft.com/authoring/2003/5"</span>
+<span class="highlight-lineno"> 5</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>    <span class="highlight-xml-attribute-name">xmlns:xlink</span><span class="highlight-xml-attribute-equal">=</span><span class="highlight-xml-attribute-value">"http://www.w3.org/1999/xlink"</span>
+<span class="highlight-lineno"> 6</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>    <span class="highlight-xml-attribute-name">xmlns:ltx</span><span class="highlight-xml-attribute-equal">=</span><span class="highlight-xml-attribute-value">"http://www.novacta.net/2018/XSL/ShfbLatexTools"</span><span class="highlight-xml-bracket">&gt;</span>
+<span class="highlight-lineno"> 7</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>
+<span class="highlight-lineno"> 8</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>    <span class="highlight-xml-bracket">&lt;</span><span class="highlight-xml-tag">introduction</span><span class="highlight-xml-bracket">&gt;</span>
+<span class="highlight-lineno"> 9</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>      <span class="highlight-xml-bracket">&lt;</span><span class="highlight-xml-tag">para</span><span class="highlight-xml-bracket">&gt;</span>
+<span class="highlight-lineno">10</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>        Class <span class="highlight-xml-bracket">&lt;</span><span class="highlight-xml-tag">codeEntityReference</span> <span class="highlight-xml-attribute-name">qualifyHint</span><span class="highlight-xml-attribute-equal">=</span><span class="highlight-xml-attribute-value">"false"</span><span class="highlight-xml-bracket">&gt;</span>
+<span class="highlight-lineno">11</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>          T:SampleClassLibrary.IntegerOperation
+<span class="highlight-lineno">12</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>        <span class="highlight-xml-bracket">&lt;/</span><span class="highlight-xml-tag">codeEntityReference</span><span class="highlight-xml-bracket">&gt;</span> provides method
+<span class="highlight-lineno">13</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>        <span class="highlight-xml-bracket">&lt;</span><span class="highlight-xml-tag">codeEntityReference</span> <span class="highlight-xml-attribute-name">qualifyHint</span><span class="highlight-xml-attribute-equal">=</span><span class="highlight-xml-attribute-value">"false"</span><span class="highlight-xml-bracket">&gt;</span>
+<span class="highlight-lineno">14</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>          M:SampleClassLibrary.IntegerOperation.Operate(System.Func{System.Int32,System.Int32},System.Int32)
+<span class="highlight-lineno">15</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>        <span class="highlight-xml-bracket">&lt;/</span><span class="highlight-xml-tag">codeEntityReference</span><span class="highlight-xml-bracket">&gt;</span>
+<span class="highlight-lineno">16</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>        to manage operations on integer values.
+<span class="highlight-lineno">17</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>      <span class="highlight-xml-bracket">&lt;/</span><span class="highlight-xml-tag">para</span><span class="highlight-xml-bracket">&gt;</span>
+<span class="highlight-lineno">18</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>      <span class="highlight-xml-bracket">&lt;</span><span class="highlight-xml-tag">para</span><span class="highlight-xml-bracket">&gt;</span>
+<span class="highlight-lineno">19</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>        In the following example, an integer is squared
+<span class="highlight-lineno">20</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>        executing the <span class="highlight-xml-bracket">&lt;</span><span class="highlight-xml-tag">codeEntityReference</span> <span class="highlight-xml-attribute-name">qualifyHint</span><span class="highlight-xml-attribute-equal">=</span><span class="highlight-xml-attribute-value">"false"</span><span class="highlight-xml-bracket">&gt;</span>
+<span class="highlight-lineno">21</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>          M:SampleClassLibrary.IntegerOperation.Operate(System.Func{System.Int32,System.Int32},System.Int32)
+<span class="highlight-lineno">22</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>        <span class="highlight-xml-bracket">&lt;/</span><span class="highlight-xml-tag">codeEntityReference</span><span class="highlight-xml-bracket">&gt;</span> method.
+<span class="highlight-lineno">23</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>        This is equivalent to define the applied function,
+<span class="highlight-lineno">24</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>        say <span class="highlight-xml-bracket">&lt;</span><span class="highlight-xml-tag">ltx:latex</span> <span class="highlight-xml-attribute-name">mode</span><span class="highlight-xml-attribute-equal">=</span><span class="highlight-xml-attribute-value">"inline"</span><span class="highlight-xml-bracket">&gt;</span>f:\mathbb{N}\rightarrow \mathbb{N},<span class="highlight-xml-bracket">&lt;/</span><span class="highlight-xml-tag">ltx:latex</span><span class="highlight-xml-bracket">&gt;</span>
+<span class="highlight-lineno">25</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>        as <span class="highlight-xml-bracket">&lt;</span><span class="highlight-xml-tag">ltx:latex</span><span class="highlight-xml-bracket">&gt;</span>\forall n \in \mathbb{N}: n \mapsto f\left(n\right)=n^2.<span class="highlight-xml-bracket">&lt;/</span><span class="highlight-xml-tag">ltx:latex</span><span class="highlight-xml-bracket">&gt;</span>
+<span class="highlight-lineno">26</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>        In addition, input validation is also checked.
+<span class="highlight-lineno">27</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>      <span class="highlight-xml-bracket">&lt;/</span><span class="highlight-xml-tag">para</span><span class="highlight-xml-bracket">&gt;</span>
+<span class="highlight-lineno">28</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>      <span class="highlight-xml-bracket">&lt;</span><span class="highlight-xml-tag">code</span> <span class="highlight-xml-attribute-name">source</span><span class="highlight-xml-attribute-equal">=</span><span class="highlight-xml-attribute-value">"..\SampleClassLibrary\IntegerOperationExample.cs.txt"</span>
+<span class="highlight-lineno">29</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>        <span class="highlight-xml-attribute-name">language</span><span class="highlight-xml-attribute-equal">=</span><span class="highlight-xml-attribute-value">"cs"</span> <span class="highlight-xml-attribute-name">title</span><span class="highlight-xml-attribute-equal">=</span><span class="highlight-xml-attribute-value">"C#"</span> <span class="highlight-xml-bracket">/&gt;</span>
+<span class="highlight-lineno">30</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>      <span class="highlight-xml-bracket">&lt;</span><span class="highlight-xml-tag">para</span><span class="highlight-xml-bracket">&gt;</span>
+<span class="highlight-lineno">31</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>        A representation of the applied function is plotted as follows.
+<span class="highlight-lineno">32</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>      <span class="highlight-xml-bracket">&lt;/</span><span class="highlight-xml-tag">para</span><span class="highlight-xml-bracket">&gt;</span>
+<span class="highlight-lineno">33</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>      <span class="highlight-xml-bracket">&lt;</span><span class="highlight-xml-tag">mediaLink</span><span class="highlight-xml-bracket">&gt;</span>
+<span class="highlight-lineno">34</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>        <span class="highlight-xml-bracket">&lt;</span><span class="highlight-xml-tag">image</span> <span class="highlight-xml-attribute-name">xlink:href</span><span class="highlight-xml-attribute-equal">=</span><span class="highlight-xml-attribute-value">"Function"</span><span class="highlight-xml-bracket">/&gt;</span>
+<span class="highlight-lineno">35</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>      <span class="highlight-xml-bracket">&lt;/</span><span class="highlight-xml-tag">mediaLink</span><span class="highlight-xml-bracket">&gt;</span>
+<span class="highlight-lineno">36</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>    <span class="highlight-xml-bracket">&lt;/</span><span class="highlight-xml-tag">introduction</span><span class="highlight-xml-bracket">&gt;</span>
+<span class="highlight-lineno">37</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>
+<span class="highlight-lineno">38</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>    <span class="highlight-xml-bracket">&lt;</span><span class="highlight-xml-tag">relatedTopics</span><span class="highlight-xml-bracket">&gt;</span>
+<span class="highlight-lineno">39</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>      <span class="highlight-xml-bracket">&lt;</span><span class="highlight-xml-tag">link</span> <span class="highlight-xml-attribute-name">xlink:href</span><span class="highlight-xml-attribute-equal">=</span><span class="highlight-xml-attribute-value">"4c3871a5-d7c6-477c-96ee-e71f0a67f7a8"</span> <span class="highlight-xml-bracket">/&gt;</span>
+<span class="highlight-lineno">40</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>    <span class="highlight-xml-bracket">&lt;/</span><span class="highlight-xml-tag">relatedTopics</span><span class="highlight-xml-bracket">&gt;</span>
+<span class="highlight-lineno">41</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>
+<span class="highlight-lineno">42</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span>  <span class="highlight-xml-bracket">&lt;/</span><span class="highlight-xml-tag">developerConceptualDocument</span><span class="highlight-xml-bracket">&gt;</span>
+<span class="highlight-lineno">43</span><span class="highlight-lnborder"></span><span class="highlight-spacerShort"></span><span class="highlight-xml-bracket">&lt;/</span><span class="highlight-xml-tag">topic</span><span class="highlight-xml-bracket">&gt;</span></pre></div></div></div><script type="text/javascript">AddLanguageTabSet("ID0EABABAAA");</script><p>
+          Note the <em>LaTeX</em> elements at lines 24-25.
+          You can check
+          <a href="b10d4d75-3729-4247-a58a-b9e5b6e4bb4d.htm">here</a>
+          how such conceptual topic looks like.
+        </p></div></div></div><div id="pageFooter" class="pageFooter" /></body></html>
