@@ -15,7 +15,12 @@
     <HelpKeywords>
       <HelpKeyword index="K" term="version, history" />
     </HelpKeywords>
-    <Topic id="9a80a504-7209-460d-bb2f-e6bc80e46f69" visible="True" isSelected="true" title="Version 2018.5.14-preview000">
+    <Topic id="8f39c593-5a46-43bc-a16a-bc599962734f" visible="True" isSelected="true" title="Version 2018.5.29-preview000">
+      <HelpKeywords>
+        <HelpKeyword index="K" term="version, 2018.5.29.0" />
+      </HelpKeywords>
+    </Topic>
+    <Topic id="9a80a504-7209-460d-bb2f-e6bc80e46f69" visible="True" title="Version 2018.5.14-preview000">
       <HelpKeywords>
         <HelpKeyword index="K" term="version, 2018.5.14.0" />
       </HelpKeywords>

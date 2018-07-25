@@ -51,7 +51,7 @@ internal static class AssemblyInfo
     public const string Title = "Novacta.Documentation.ShfbTools";
 
     // Product version
-    public const string Version = "2018.5.14.0";
+    public const string Version = "2018.5.29.0";
 
     // Product description
     public const string Description =

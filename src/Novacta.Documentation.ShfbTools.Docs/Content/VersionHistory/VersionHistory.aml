@@ -16,10 +16,17 @@
 
 				<list class="bullet">
 					<listItem>
-						<para><link xlink:href="9a80a504-7209-460d-bb2f-e6bc80e46f69" /></para>
+						<para>
+              <link xlink:href="8f39c593-5a46-43bc-a16a-bc599962734f" />
+            </para>
 					</listItem>
+          <listItem>
+            <para>
+              <link xlink:href="9a80a504-7209-460d-bb2f-e6bc80e46f69" />
+            </para>
+          </listItem>
 
-				</list>
+        </list>
 
 			</content>
 		</section>
