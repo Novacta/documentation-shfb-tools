@@ -115,6 +115,7 @@
     <None Include="Content\Tests.aml" />
     <None Include="Content\VersionHistory\v2018.5.14.0.aml" />
     <None Include="Content\VersionHistory\v2018.5.29.0.aml" />
+    <None Include="Content\VersionHistory\v2018.7.8.0.aml" />
     <None Include="Content\VersionHistory\VersionHistory.aml" />
     <None Include="Content\Welcome.aml" />
   </ItemGroup>

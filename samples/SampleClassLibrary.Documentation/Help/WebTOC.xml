@@ -4,19 +4,19 @@
   <HelpTOCNode Title="Welcome" Url="html/3df11b4d-ed21-48e5-8eb5-a1f6cf79c534.htm" />
   <HelpTOCNode Title="Operating on integers" Url="html/b10d4d75-3729-4247-a58a-b9e5b6e4bb4d.htm" />
   <HelpTOCNode Title="Operating on integer arrays" Url="html/4c3871a5-d7c6-477c-96ee-e71f0a67f7a8.htm" />
-  <HelpTOCNode Id="7e7de785-87dc-4b48-856a-81f14af32ae8" Title="Version History" Url="html/c711650b-cb39-4fce-8938-885a71d52e6f.htm">
+  <HelpTOCNode Id="5fa24323-3985-43f2-8c79-49ee6e6bbb49" Title="Version History" Url="html/c711650b-cb39-4fce-8938-885a71d52e6f.htm">
     <HelpTOCNode Title="Version 1.0.0.0" Url="html/a6fc421b-f7f2-4b02-a2e2-d703be7ebaa4.htm" />
   </HelpTOCNode>
-  <HelpTOCNode Id="422ede90-e8cf-43a6-901a-fa716f90632e" Title="SampleClassLibrary" Url="html/N_SampleClassLibrary.htm">
-    <HelpTOCNode Id="fcd9cfd6-faad-4bc0-9bae-9b132d9a7163" Title="IntegerOperation Class" Url="html/T_SampleClassLibrary_IntegerOperation.htm">
-      <HelpTOCNode Id="fa361193-e867-4f10-b53c-54d228a553f9" Title="IntegerOperation Methods" Url="html/Methods_T_SampleClassLibrary_IntegerOperation.htm">
+  <HelpTOCNode Id="50175d66-ccf6-491b-967c-1649bdf0e270" Title="SampleClassLibrary" Url="html/N_SampleClassLibrary.htm">
+    <HelpTOCNode Id="daea8332-84b3-4330-8eba-e5be538609e8" Title="IntegerOperation Class" Url="html/T_SampleClassLibrary_IntegerOperation.htm">
+      <HelpTOCNode Id="d5e81397-061c-4c90-9b1c-9169de4e6696" Title="IntegerOperation Methods" Url="html/Methods_T_SampleClassLibrary_IntegerOperation.htm">
         <HelpTOCNode Title="Operate Method " Url="html/M_SampleClassLibrary_IntegerOperation_Operate.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
   </HelpTOCNode>
-  <HelpTOCNode Id="69f3a558-81e1-4629-85b1-f3f010469203" Title="SampleClassLibrary.Advanced" Url="html/N_SampleClassLibrary_Advanced.htm">
-    <HelpTOCNode Id="5fc3571e-25bc-4f49-a6aa-9ec47fc26784" Title="IntegerArrayOperation Class" Url="html/T_SampleClassLibrary_Advanced_IntegerArrayOperation.htm">
-      <HelpTOCNode Id="70593b95-a22d-4ea1-9b66-90fa79b05f10" Title="IntegerArrayOperation Methods" Url="html/Methods_T_SampleClassLibrary_Advanced_IntegerArrayOperation.htm">
+  <HelpTOCNode Id="8a3d0128-8a11-4d3e-add3-13e3cea48526" Title="SampleClassLibrary.Advanced" Url="html/N_SampleClassLibrary_Advanced.htm">
+    <HelpTOCNode Id="9b16546a-e6c7-477f-93d2-78beda05d73e" Title="IntegerArrayOperation Class" Url="html/T_SampleClassLibrary_Advanced_IntegerArrayOperation.htm">
+      <HelpTOCNode Id="752213ea-fe14-45b8-9225-f7b6ec0889c2" Title="IntegerArrayOperation Methods" Url="html/Methods_T_SampleClassLibrary_Advanced_IntegerArrayOperation.htm">
         <HelpTOCNode Title="Operate Method " Url="html/M_SampleClassLibrary_Advanced_IntegerArrayOperation_Operate.htm" />
       </HelpTOCNode>
     </HelpTOCNode>

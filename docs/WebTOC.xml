@@ -7,73 +7,74 @@
   <HelpTOCNode Title="Using images in reference topics" Url="html/2fb0ed9f-cfa1-4e3f-88fd-ce4de4abeea7.htm" />
   <HelpTOCNode Title="Highlighting class names" Url="html/eb942a1c-fe7a-4d81-a19f-15f1dd5dd0c6.htm" />
   <HelpTOCNode Title="Testing the tools" Url="html/f1fb7d15-a64e-4b8f-b6b4-631d34e81ce5.htm" />
-  <HelpTOCNode Id="62263bea-0238-45fa-8c20-e65334751847" Title="Version History" Url="html/7abd97df-f098-4afa-9f9c-2255d3e61a33.htm">
+  <HelpTOCNode Id="f0bf8b58-e4c7-4e5a-ad7c-6fc85c16f6e5" Title="Version History" Url="html/7abd97df-f098-4afa-9f9c-2255d3e61a33.htm">
+    <HelpTOCNode Title="Version 2018.7.8-preview000" Url="html/070d0c26-8eed-4214-8542-5ff7f3df705b.htm" />
     <HelpTOCNode Title="Version 2018.5.29-preview000" Url="html/8f39c593-5a46-43bc-a16a-bc599962734f.htm" />
     <HelpTOCNode Title="Version 2018.5.14-preview000" Url="html/9a80a504-7209-460d-bb2f-e6bc80e46f69.htm" />
   </HelpTOCNode>
-  <HelpTOCNode Id="6b88d638-1100-4f31-81b6-e5af98a5ce04" Title="Novacta.Documentation.ShfbTools" Url="html/4678ffc8-bbaf-a1ac-fc8e-8ab105f12552.htm">
-    <HelpTOCNode Id="2f27d429-d5b8-4baf-b4c1-141489e7db7e" Title="DviPng Class" Url="html/f9a2014d-c09e-cb9d-f719-90c178661c13.htm">
+  <HelpTOCNode Id="09119e77-e859-47cb-a51b-a83974fd29cf" Title="Novacta.Documentation.ShfbTools" Url="html/4678ffc8-bbaf-a1ac-fc8e-8ab105f12552.htm">
+    <HelpTOCNode Id="5f16de2d-1313-4aef-98b2-076a3869f1ff" Title="DviPng Class" Url="html/f9a2014d-c09e-cb9d-f719-90c178661c13.htm">
       <HelpTOCNode Title="DviPng Constructor " Url="html/d43bdae8-c1de-9eb2-a26b-06a786b0e87f.htm" />
-      <HelpTOCNode Id="fcbd9ed2-60c7-4ac4-9c7b-821dc012ef5d" Title="DviPng Properties" Url="html/7c753593-5d2c-eb85-f6b7-8977135735a8.htm">
+      <HelpTOCNode Id="f7da70ca-69ed-4acd-b6b9-e3a11b247eaf" Title="DviPng Properties" Url="html/7c753593-5d2c-eb85-f6b7-8977135735a8.htm">
         <HelpTOCNode Title="Executable Property " Url="html/a606e1b3-cf41-b42e-a546-fdd0813d4f55.htm" />
         <HelpTOCNode Title="WorkingDirectory Property " Url="html/b3b9a2cd-1ad1-5776-2833-d09d1d9b67a5.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="2b2dff8d-912f-4703-baf4-d1c1051521b3" Title="DviPng Methods" Url="html/49786a45-bb41-62c5-acb8-c8e3e0d01971.htm">
+      <HelpTOCNode Id="2e29ccf1-1313-44ea-9432-60c5cc354371" Title="DviPng Methods" Url="html/49786a45-bb41-62c5-acb8-c8e3e0d01971.htm">
         <HelpTOCNode Title="Arguments Method " Url="html/28ebd010-be98-e06f-a6f9-cc4355e325a1.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
-    <HelpTOCNode Id="ee9cb5cd-b106-4ebd-b0be-44910645eb89" Title="DviSvgm Class" Url="html/ef6826b2-f602-d454-c402-a8764d47f6db.htm">
+    <HelpTOCNode Id="62599e9a-2deb-490c-955b-d99071fe6670" Title="DviSvgm Class" Url="html/ef6826b2-f602-d454-c402-a8764d47f6db.htm">
       <HelpTOCNode Title="DviSvgm Constructor " Url="html/ba5ad16b-5ea5-9dd5-f4bd-e2e4e911a880.htm" />
-      <HelpTOCNode Id="eae44981-0ef2-4cdd-aeb9-b06f744c099b" Title="DviSvgm Properties" Url="html/b375cb30-00bc-eabe-ebd0-68863806fb21.htm">
+      <HelpTOCNode Id="329ed200-c350-4a0e-8235-815416a96265" Title="DviSvgm Properties" Url="html/b375cb30-00bc-eabe-ebd0-68863806fb21.htm">
         <HelpTOCNode Title="Executable Property " Url="html/9e979f05-9383-bc03-56ef-10b6ecf16d65.htm" />
         <HelpTOCNode Title="WorkingDirectory Property " Url="html/058365f5-45a6-b579-d830-15d5c538172c.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="666b608f-c33d-499c-a992-bfb697731737" Title="DviSvgm Methods" Url="html/9a88d239-ec53-359b-8e54-2a8c8c960b9e.htm">
+      <HelpTOCNode Id="ab2819f9-213f-4ada-b96c-f1fda8a8b9b4" Title="DviSvgm Methods" Url="html/9a88d239-ec53-359b-8e54-2a8c8c960b9e.htm">
         <HelpTOCNode Title="Arguments Method " Url="html/72376c8a-ffaf-2cbc-b941-24cc78687a2e.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
-    <HelpTOCNode Id="79cde590-1959-4de1-a2b6-2bf1cd431190" Title="FileProcessor Class" Url="html/08c04bd5-2345-311e-f0e8-46ab352a0463.htm">
+    <HelpTOCNode Id="4145c874-2b89-4979-9783-ead351672167" Title="FileProcessor Class" Url="html/08c04bd5-2345-311e-f0e8-46ab352a0463.htm">
       <HelpTOCNode Title="FileProcessor Constructor " Url="html/7132768f-d5fa-bea3-555d-fd5866c04b87.htm" />
-      <HelpTOCNode Id="ec94d82c-b1c2-442a-89f1-f185e631e0a5" Title="FileProcessor Properties" Url="html/b0672b84-7903-8c8e-bc64-baf6654529a4.htm">
+      <HelpTOCNode Id="cc38fe72-8301-4a8e-bda8-48a6e0cbbfdd" Title="FileProcessor Properties" Url="html/b0672b84-7903-8c8e-bc64-baf6654529a4.htm">
         <HelpTOCNode Title="Executable Property " Url="html/ae55581c-da80-a510-b681-9f16b30a2180.htm" />
         <HelpTOCNode Title="WorkingDirectory Property " Url="html/0757b11c-c0f1-4227-411a-7f961122228c.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="b1e8fa20-e208-40f8-b9e3-72935ea17d1b" Title="FileProcessor Methods" Url="html/e3ef2e66-dadd-494e-9b65-0665d966ea25.htm">
+      <HelpTOCNode Id="c6ffdaeb-d411-43b9-b348-ca714dad2eee" Title="FileProcessor Methods" Url="html/e3ef2e66-dadd-494e-9b65-0665d966ea25.htm">
         <HelpTOCNode Title="Arguments Method " Url="html/b4654565-ec8c-11b4-1890-b2c23490dd6c.htm" />
-        <HelpTOCNode Id="accecdaf-dfea-47cf-b03a-020fad00da65" Title="Run Method " Url="html/fe7e07f4-4347-08c0-de73-357f684df588.htm">
+        <HelpTOCNode Id="3bf3dff0-567a-460f-82b1-697eea4612ff" Title="Run Method " Url="html/fe7e07f4-4347-08c0-de73-357f684df588.htm">
           <HelpTOCNode Title="Run Method (String)" Url="html/8706b02e-6208-5d98-7817-33100c1d27da.htm" />
           <HelpTOCNode Title="Run Method (String, String)" Url="html/907c3ddb-a9ad-a0e2-f469-64fb1ce67eb0.htm" />
         </HelpTOCNode>
       </HelpTOCNode>
     </HelpTOCNode>
-    <HelpTOCNode Id="c67392ac-4a8c-4a51-8242-151b0ce4168d" Title="HighlightingTools Class" Url="html/4e5a88b0-2d69-bc64-9c01-3d6eed1599b7.htm">
-      <HelpTOCNode Id="eaaeca7a-543f-4c30-a585-98cc872747a2" Title="HighlightingTools Methods" Url="html/d51b7f24-17d5-416c-7e10-71eed1a3c03f.htm">
+    <HelpTOCNode Id="88447fe1-9979-42e7-a2e0-d53324373b56" Title="HighlightingTools Class" Url="html/4e5a88b0-2d69-bc64-9c01-3d6eed1599b7.htm">
+      <HelpTOCNode Id="aa9fe551-159d-4add-b1b0-122d2028973a" Title="HighlightingTools Methods" Url="html/d51b7f24-17d5-416c-7e10-71eed1a3c03f.htm">
         <HelpTOCNode Title="AddClassNamesFamily Method " Url="html/5630b532-ab3d-ef3d-453e-85285c4cae80.htm" />
         <HelpTOCNode Title="RemoveClassNamesFamily Method " Url="html/8796fecc-e48b-769e-f659-a97809d04e8a.htm" />
         <HelpTOCNode Title="SetClassNamesColor Method " Url="html/444b8474-0e7b-1a60-7e77-41511d864594.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
-    <HelpTOCNode Id="b602e4a6-d6a0-420d-8ef3-907782d1238f" Title="ImageTools Class" Url="html/5700d976-a5d2-1465-32b0-2962a14f75d3.htm">
-      <HelpTOCNode Id="814d91a3-d6a9-48b2-808f-da2c55303789" Title="ImageTools Methods" Url="html/ec8f2d76-91ca-2ec0-191f-770fed1642ea.htm">
+    <HelpTOCNode Id="012fd89f-aa7a-43cd-974b-dfc61201da50" Title="ImageTools Class" Url="html/5700d976-a5d2-1465-32b0-2962a14f75d3.htm">
+      <HelpTOCNode Id="5212ef2c-d646-4b1f-a626-6da0fbd4c7a0" Title="ImageTools Methods" Url="html/ec8f2d76-91ca-2ec0-191f-770fed1642ea.htm">
         <HelpTOCNode Title="Install Method " Url="html/6f58af54-196a-bc8f-6399-91aadf373be1.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
-    <HelpTOCNode Id="f20a60f3-b720-41b2-838f-ef78938b148a" Title="Latex Class" Url="html/7df091e3-9e7a-d80d-71d9-4846eba58282.htm">
+    <HelpTOCNode Id="0963fa99-26f9-48f5-adc3-a76561d71b9e" Title="Latex Class" Url="html/7df091e3-9e7a-d80d-71d9-4846eba58282.htm">
       <HelpTOCNode Title="Latex Constructor " Url="html/acb5c1a1-62b2-63ca-49bd-dca77971702a.htm" />
-      <HelpTOCNode Id="c6b18fc5-06de-4efc-8746-30ac70589e1c" Title="Latex Properties" Url="html/121712fb-3155-0427-71a5-a8adf3875c88.htm">
+      <HelpTOCNode Id="180d2c9c-dc03-49f0-925f-c94f67e5db03" Title="Latex Properties" Url="html/121712fb-3155-0427-71a5-a8adf3875c88.htm">
         <HelpTOCNode Title="Executable Property " Url="html/9dfd7870-cf32-ccef-6ae5-2d8d765de17b.htm" />
         <HelpTOCNode Title="WorkingDirectory Property " Url="html/853cd6e0-7c73-4f39-aa63-513b6e477318.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="b2b13a4c-2704-4342-984c-d468b0269e08" Title="Latex Methods" Url="html/1ea81064-9030-18a6-34a7-12fd2565a1c7.htm">
+      <HelpTOCNode Id="37b5a2f1-f8a3-403f-9f71-c3d57bbffc08" Title="Latex Methods" Url="html/1ea81064-9030-18a6-34a7-12fd2565a1c7.htm">
         <HelpTOCNode Title="Arguments Method " Url="html/d3b19121-b545-9468-4a75-b70c67cc267d.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
-    <HelpTOCNode Id="ef20fa8a-f075-430e-9a4a-4b9ec3aacd65" Title="LatexConfigDlg Class" Url="html/839fc38d-e1f4-ddb1-b949-841e48569503.htm">
-      <HelpTOCNode Id="6594f0e6-807d-428b-93f2-1a62442dd932" Title="LatexConfigDlg Constructor " Url="html/0cb2b391-7e1e-e476-07ce-c2ab97a603e7.htm">
+    <HelpTOCNode Id="d3d355e7-1fc6-4154-a30e-eaf84f0bd7e6" Title="LatexConfigDlg Class" Url="html/839fc38d-e1f4-ddb1-b949-841e48569503.htm">
+      <HelpTOCNode Id="1168abed-49e2-4144-986d-aa73ff053891" Title="LatexConfigDlg Constructor " Url="html/0cb2b391-7e1e-e476-07ce-c2ab97a603e7.htm">
         <HelpTOCNode Title="LatexConfigDlg Constructor " Url="html/512dc4d6-ee91-fe78-b506-623d4ebc9312.htm" />
         <HelpTOCNode Title="LatexConfigDlg Constructor (String)" Url="html/fd781695-d129-4bca-94fc-70e4ae085284.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="2d61203f-b6b9-4a50-bc5d-4d9af1a7cc97" Title="LatexConfigDlg Properties" Url="html/c425c432-f269-0362-49bd-d5986c89eb68.htm">
+      <HelpTOCNode Id="4bc58af2-af6a-465f-a8b8-c20440d0f73a" Title="LatexConfigDlg Properties" Url="html/c425c432-f269-0362-49bd-d5986c89eb68.htm">
         <HelpTOCNode Title="DviSvgmBinFolder Property " Url="html/4f4c1d61-2cf9-b3fb-f2ac-2a36e6823748.htm" />
         <HelpTOCNode Title="ImageDepthCorrection Property " Url="html/239f956e-d3df-80fc-7b25-8364c831b63f.htm" />
         <HelpTOCNode Title="ImageFileFormat Property " Url="html/16aea285-423a-e878-7f42-f9dc4923aa45.htm" />
@@ -81,21 +82,21 @@
         <HelpTOCNode Title="LatexBinFolder Property " Url="html/735cafc0-d52a-b43b-752e-ba169d9fe814.htm" />
         <HelpTOCNode Title="RedirectFileProcessors Property " Url="html/aa076df8-efeb-2eb3-29e4-5055471e0127.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="1e83d5c3-a3a8-41de-a4c6-8b8a96a41b84" Title="LatexConfigDlg Methods" Url="html/87f79d45-d61b-2857-21c0-23100be5fc0b.htm">
-        <HelpTOCNode Id="46c49df9-eb8b-44b2-b3bd-b83245f1acbf" Title="Dispose Method " Url="html/3c91f52f-841b-abc2-aa91-19e91f435560.htm">
+      <HelpTOCNode Id="36f9ae54-aa45-4773-a210-3febd602c246" Title="LatexConfigDlg Methods" Url="html/87f79d45-d61b-2857-21c0-23100be5fc0b.htm">
+        <HelpTOCNode Id="99a4a709-65e7-4b83-8b78-51ce34bbd69b" Title="Dispose Method " Url="html/3c91f52f-841b-abc2-aa91-19e91f435560.htm">
           <HelpTOCNode Title="Dispose Method (Boolean)" Url="html/e915a538-d9a7-47ae-edda-11db3636ce30.htm" />
         </HelpTOCNode>
       </HelpTOCNode>
       <HelpTOCNode Title="LatexConfigDlg Events" Url="html/aa93417e-7ff4-8827-3c0a-ef1e24952ccd.htm" />
     </HelpTOCNode>
-    <HelpTOCNode Id="35fdd51f-624a-4034-a06d-41a3a82493e0" Title="LatexTools Class" Url="html/aba51c7e-31b7-3960-2885-289a1cd95caf.htm">
-      <HelpTOCNode Id="9bb4cbf9-c872-45a5-aeac-415c109a4fe9" Title="LatexTools Methods" Url="html/4c2cda77-c58f-4191-a4fb-6a7955234cef.htm">
+    <HelpTOCNode Id="9d57c321-7728-4b49-9de8-91e37539ef69" Title="LatexTools Class" Url="html/aba51c7e-31b7-3960-2885-289a1cd95caf.htm">
+      <HelpTOCNode Id="cf84687a-7a09-4319-ab0b-f13f6890ef3d" Title="LatexTools Methods" Url="html/4c2cda77-c58f-4191-a4fb-6a7955234cef.htm">
         <HelpTOCNode Title="Install Method " Url="html/f01e7b5f-8725-0b14-1c5b-152e8130bafd.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
-    <HelpTOCNode Id="e58c15d4-66e8-4825-84bb-84df38fc7327" Title="ShfbLatexComponent Class" Url="html/4ac876f1-f3aa-9ddf-8410-d94d6d365b9a.htm">
+    <HelpTOCNode Id="0a7c9ed2-e94e-4617-8f0b-d104ec770ca8" Title="ShfbLatexComponent Class" Url="html/4ac876f1-f3aa-9ddf-8410-d94d6d365b9a.htm">
       <HelpTOCNode Title="ShfbLatexComponent Constructor " Url="html/142bbbdb-2675-b453-d67d-76aeb3fdc586.htm" />
-      <HelpTOCNode Id="42b8ff6f-0c8e-4e9c-9c01-39bde93994f7" Title="ShfbLatexComponent Properties" Url="html/0b8d863f-45b4-f23e-36ee-814536aaaa72.htm">
+      <HelpTOCNode Id="1c733a41-2040-4647-a591-6f37766ee81b" Title="ShfbLatexComponent Properties" Url="html/0b8d863f-45b4-f23e-36ee-814536aaaa72.htm">
         <HelpTOCNode Title="BasePath Property " Url="html/c984c8ec-0197-be8a-040a-fa0aa2b413d7.htm" />
         <HelpTOCNode Title="DviPng Property " Url="html/b35d3e30-daa5-749d-fe89-ac1d51cbf561.htm" />
         <HelpTOCNode Title="DviSvgm Property " Url="html/83b0afb7-2beb-2d7a-50d7-e43493978757.htm" />
@@ -107,27 +108,27 @@
         <HelpTOCNode Title="RedirectFileProcessors Property " Url="html/34a4e389-9e74-e320-fa93-4b7776f24d94.htm" />
         <HelpTOCNode Title="WorkingFolder Property " Url="html/32cc4af4-bff6-ec48-778d-beabfd8e3980.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="881cd199-ec01-4e86-96df-52b1595b862c" Title="ShfbLatexComponent Methods" Url="html/57b2e19f-a196-0f16-0bf1-a04dc5bcdabe.htm">
+      <HelpTOCNode Id="736e2063-0757-4bc7-ba66-3f8e86fa0263" Title="ShfbLatexComponent Methods" Url="html/57b2e19f-a196-0f16-0bf1-a04dc5bcdabe.htm">
         <HelpTOCNode Title="Apply Method " Url="html/4de0d3a5-5cbb-05fc-b014-fb8a56f6d152.htm" />
         <HelpTOCNode Title="Initialize Method " Url="html/2617839e-c261-4f76-4ea6-a3a93741f3fc.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
-    <HelpTOCNode Id="0e01dc40-06ae-4dc6-96ac-807c8630767c" Title="ShfbLatexComponent.Factory Class" Url="html/8a740dcc-1456-e285-b970-9c1dacef105e.htm">
+    <HelpTOCNode Id="fbea4cd6-7252-4c08-a4fd-dfdc13e36839" Title="ShfbLatexComponent.Factory Class" Url="html/8a740dcc-1456-e285-b970-9c1dacef105e.htm">
       <HelpTOCNode Title="ShfbLatexComponent.Factory Constructor " Url="html/580bf649-19f2-9281-b496-e0f3b7c9162d.htm" />
-      <HelpTOCNode Id="e24d0462-1fb0-4eaa-9201-39dae683f839" Title="Factory Properties" Url="html/30f2ccc4-283e-d8ef-2c50-1e9792f86c97.htm">
+      <HelpTOCNode Id="79fb28f8-05f0-42e8-a40e-08a1dcf1758f" Title="Factory Properties" Url="html/30f2ccc4-283e-d8ef-2c50-1e9792f86c97.htm">
         <HelpTOCNode Title="DefaultConfiguration Property " Url="html/8212a159-1012-29fe-542c-b76d1db4c67b.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="31e89df2-94c4-4b46-bb16-302cdec86fd0" Title="Factory Methods" Url="html/b250aa86-16f3-2dc9-6f3a-b832ba178811.htm">
+      <HelpTOCNode Id="c06c1c66-d21a-4ce2-a0e7-bcd2c0361cda" Title="Factory Methods" Url="html/b250aa86-16f3-2dc9-6f3a-b832ba178811.htm">
         <HelpTOCNode Title="ConfigureComponent Method " Url="html/c992d116-8d6d-c62f-8775-ee83e06f8b83.htm" />
         <HelpTOCNode Title="Create Method " Url="html/facdac23-fbf7-c5a8-c546-bd59d4e7ea70.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
-    <HelpTOCNode Id="f9df363d-e58a-4568-8f62-88f12e187216" Title="ShfbLatexPlugIn Class" Url="html/07a8bf94-ac06-03e0-a79c-890b2ca68217.htm">
+    <HelpTOCNode Id="d5b2b6cc-059e-4b4b-9331-bf9283e193cc" Title="ShfbLatexPlugIn Class" Url="html/07a8bf94-ac06-03e0-a79c-890b2ca68217.htm">
       <HelpTOCNode Title="ShfbLatexPlugIn Constructor " Url="html/74d3de9a-f878-1d85-a358-b4c365d987cf.htm" />
-      <HelpTOCNode Id="bcc425f4-0046-424b-95f3-c713a5f5715c" Title="ShfbLatexPlugIn Properties" Url="html/da7385ab-0c74-915c-e2f0-f651d318a9d2.htm">
+      <HelpTOCNode Id="1aaa60ce-d6f3-4240-bd06-e990ce4e5c20" Title="ShfbLatexPlugIn Properties" Url="html/da7385ab-0c74-915c-e2f0-f651d318a9d2.htm">
         <HelpTOCNode Title="ExecutionPoints Property " Url="html/2c2a284e-06f7-c625-3741-61147a1b640e.htm" />
       </HelpTOCNode>
-      <HelpTOCNode Id="fdc6a6b0-6d92-453a-9b0a-e6a177a87f36" Title="ShfbLatexPlugIn Methods" Url="html/e9e50183-bda5-ea63-f0d0-5dbcf086217e.htm">
+      <HelpTOCNode Id="e1b4f42b-d7c2-480b-b773-b2e3a7f60a1d" Title="ShfbLatexPlugIn Methods" Url="html/e9e50183-bda5-ea63-f0d0-5dbcf086217e.htm">
         <HelpTOCNode Title="ConfigurePlugIn Method " Url="html/79ebd51c-a2bf-56e5-4b4c-04f557482801.htm" />
         <HelpTOCNode Title="Dispose Method " Url="html/387b78aa-517f-bc43-0e73-c4a1a32e98bc.htm" />
         <HelpTOCNode Title="Execute Method " Url="html/f6dc5a88-d231-c965-34d1-a8e541abfe8b.htm" />
@@ -137,17 +138,17 @@
     </HelpTOCNode>
     <HelpTOCNode Title="Topics Enumeration" Url="html/cfcfdf3d-a691-0a1f-3e17-c98fe07e610f.htm" />
   </HelpTOCNode>
-  <HelpTOCNode Id="7dfee8e4-b6ba-447e-a57d-97708bb84468" Title="SampleClassLibrary Namespaces" Url="html/3a466136-0a03-0104-bbf3-34b96985ddd8.htm">
-    <HelpTOCNode Id="c354c123-fb7a-41d1-926e-69eba8e6d6c3" Title="SampleClassLibrary" Url="html/e88b049f-114f-7602-15f8-cd09c26b797f.htm">
-      <HelpTOCNode Id="d90d444e-f6fb-48b8-95fb-776f3762d7af" Title="IntegerOperation Class" Url="html/07ae9d09-40d5-f692-6d0e-74c286693c03.htm">
-        <HelpTOCNode Id="f3c87207-0710-4e61-8d83-24c8183582fa" Title="IntegerOperation Methods" Url="html/574ddcc2-d08d-685a-7133-266d69cff022.htm">
+  <HelpTOCNode Id="33746b34-6c24-4325-bcf1-5fa9da4760f3" Title="SampleClassLibrary Namespaces" Url="html/3a466136-0a03-0104-bbf3-34b96985ddd8.htm">
+    <HelpTOCNode Id="1745546f-698d-4545-8fd4-92c3e573a658" Title="SampleClassLibrary" Url="html/e88b049f-114f-7602-15f8-cd09c26b797f.htm">
+      <HelpTOCNode Id="84a36df0-7218-4ae7-8e5d-0e6463bc3a0c" Title="IntegerOperation Class" Url="html/07ae9d09-40d5-f692-6d0e-74c286693c03.htm">
+        <HelpTOCNode Id="18477433-8ce7-40fa-9884-00022467eed7" Title="IntegerOperation Methods" Url="html/574ddcc2-d08d-685a-7133-266d69cff022.htm">
           <HelpTOCNode Title="Operate Method " Url="html/08c1580c-1970-64e0-3271-ad07ae38cffc.htm" />
         </HelpTOCNode>
       </HelpTOCNode>
     </HelpTOCNode>
-    <HelpTOCNode Id="b3e0cf8e-68cd-4507-b5a9-df7bdf83daa6" Title="SampleClassLibrary.Advanced" Url="html/d8fea4e9-4154-4818-3411-9f1f391b6ea4.htm">
-      <HelpTOCNode Id="61699e15-9952-485b-b9c7-e62f41070d59" Title="IntegerArrayOperation Class" Url="html/909dd5b5-b7e4-5f1e-55f4-1fbb5fc23a81.htm">
-        <HelpTOCNode Id="8d1941d7-500b-496d-b4db-68acff2cc9a1" Title="IntegerArrayOperation Methods" Url="html/67441461-4ba3-cd01-844f-ae4bb9606bd3.htm">
+    <HelpTOCNode Id="e3360f66-d1f4-4402-94fc-28ed422316de" Title="SampleClassLibrary.Advanced" Url="html/d8fea4e9-4154-4818-3411-9f1f391b6ea4.htm">
+      <HelpTOCNode Id="72e20121-41fc-4c19-a841-a5f248f2b726" Title="IntegerArrayOperation Class" Url="html/909dd5b5-b7e4-5f1e-55f4-1fbb5fc23a81.htm">
+        <HelpTOCNode Id="54c5d6fe-b002-42ae-a124-4682e03a0255" Title="IntegerArrayOperation Methods" Url="html/67441461-4ba3-cd01-844f-ae4bb9606bd3.htm">
           <HelpTOCNode Title="Operate Method " Url="html/70bf1d48-c11d-141c-7dd0-27740b5b7e43.htm" />
         </HelpTOCNode>
       </HelpTOCNode>

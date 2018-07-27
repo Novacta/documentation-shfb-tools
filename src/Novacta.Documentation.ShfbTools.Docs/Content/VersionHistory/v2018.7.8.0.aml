@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<topic id="070d0c26-8eed-4214-8542-5ff7f3df705b" revisionNumber="1">
+  <developerConceptualDocument
+    xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5"
+    xmlns:xlink="http://www.w3.org/1999/xlink">
+
+    <introduction>
+      <para>
+        Version 2018.7.8-preview000 was released on July 27 2018.
+      </para>
+    </introduction>
+
+    <section>
+      <title>Changes in This Release</title>
+      <content>
+        <list class="bullet">
+          <listItem>
+            <para>Release of the assembly supporting SHFB version v2018.7.8.0.</para>
+          </listItem>
+        </list>
+      </content>
+    </section>
+    <relatedTopics>
+      <link xlink:href="7abd97df-f098-4afa-9f9c-2255d3e61a33" />
+    </relatedTopics>
+  </developerConceptualDocument>
+</topic>

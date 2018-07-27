@@ -3,7 +3,7 @@
   <package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
   <metadata>
     <id>Novacta.Documentation.ShfbTools</id>
-    <version>2018.5.29-preview000</version>
+    <version>2018.7.8-preview000</version>
     <authors>Giovanni Lafratta</authors>
     <owners>novacta</owners>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
@@ -15,7 +15,7 @@
 * Setting lists of keywords to be colorized in code examples.
 </description>
     <summary>This package enhances Sandcastle Help File Builder by providing support for LaTeX formulas, image management in reference topics, and class name highlighting in code examples.</summary>
-    <releaseNotes>Release of the package supporting SHFB version v2018.5.29.0.</releaseNotes>
+    <releaseNotes>Release of the package supporting SHFB version v2018.7.8.0.</releaseNotes>
     <copyright>Copyright © 2018, Giovanni Lafratta, All Rights Reserved.</copyright>
     <tags>LaTeX Documentation Colorization XML comments &lt;code&gt; Sandcastle SHFB</tags>
     <repository type="Git" url="https://github.com/Novacta/documentation-shfb-tools" />
