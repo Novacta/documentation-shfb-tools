@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<topic id="676f68cb-69d9-4d30-bff2-cceb7a20beca" revisionNumber="1">
+  <developerConceptualDocument
+    xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5"
+    xmlns:xlink="http://www.w3.org/1999/xlink">
+
+    <introduction>
+      <para>
+        Version 2019.4.14-preview000 was released on May 18 2019.
+      </para>
+    </introduction>
+
+    <section>
+      <title>Changes in This Release</title>
+      <content>
+        <list class="bullet">
+          <listItem>
+            <para>Release of the assembly supporting SHFB version v2019.4.14.0.</para>
+          </listItem>
+          <listItem>
+            <para>
+              A new configuration option controls if a LaTeX equation must be 
+              interpreted, by default, as entered 
+              in <literal>inline</literal> mode, or 
+              in <literal>display</literal> mode. 
+              The default configuration sets this option to <literal>display</literal>.
+              Such behavior can be overridden for each specific equation.
+          </para>
+          </listItem>
+          <listItem>
+            <para>
+              A new configuration option enables the addition of
+              further commands to the preamble of LaTeX documents
+              used by the tools to represent equations.
+            </para>
+          </listItem>          
+        </list>
+      </content>
+    </section>
+    <relatedTopics>
+      <link xlink:href="7abd97df-f098-4afa-9f9c-2255d3e61a33" />
+    </relatedTopics>
+  </developerConceptualDocument>
+</topic>

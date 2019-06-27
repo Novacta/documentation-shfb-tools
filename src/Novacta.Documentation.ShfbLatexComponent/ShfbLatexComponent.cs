@@ -31,11 +31,45 @@ namespace Novacta.Documentation.ShfbTools
         /// </summary>
         private static int EquationId = 0;
 
-        private readonly XPathExpression referenceRoot = XPathExpression.Compile("document/comments");
+        private readonly XPathExpression referenceRoot =
+            XPathExpression.Compile("document/comments");
 
         private bool isFileFormatPng;
 
+        private bool isLatexDefaultModeInline;
+
+        private string initialTexDocument;
+
         #region CONFIGURATION
+
+        /// <summary>
+        /// Gets or sets the additional preamble commands.
+        /// </summary>
+        /// <value>The additional preamble commands.</value>
+        public string[] AdditionalPreambleCommands { get; set; }
+
+        private string[] GetAdditionalPreambleCommands(
+            XPathNavigator additionalPreambleCommands)
+        {
+            List<string> lines = new List<string>();
+
+            if (additionalPreambleCommands.MoveToFirstChild())
+            {
+                lines.Add(additionalPreambleCommands.Value);
+                while (additionalPreambleCommands.MoveToNext())
+                {
+                    lines.Add(additionalPreambleCommands.Value);
+                }
+            }
+
+            return lines.ToArray();
+        }
+
+        /// <summary>
+        /// Gets or sets the LaTeX default mode.
+        /// </summary>
+        /// <value>The LaTeX default mode.</value>
+        public string LatexDefaultMode { get; set; }
 
         /// <summary>
         /// Gets the image file format.
@@ -157,52 +191,29 @@ namespace Novacta.Documentation.ShfbTools
             {
                 get
                 {
-                    StringBuilder sb = new StringBuilder(Environment.GetFolderPath(
-                        Environment.SpecialFolder.CommonApplicationData));
-
-                    sb.Append(@"\EWSoftware\Sandcastle Help File Builder\Components and Plug-Ins\" +
-                        "Novacta.Documentation.ShfbLatexComponent.config");
-
-                    XmlDocument binConfiguration = new XmlDocument();
-                    string dvisvgmBinPath = null;
-                    string latexBinPath = null;
-                    try
-                    {
-                        binConfiguration.Load(sb.ToString());
-                        XmlNode latexNode = binConfiguration.SelectSingleNode("//latexBinPath");
-                        latexBinPath = latexNode.Attributes["value"].InnerText;
-
-                        XmlNode dvisvgmNode = binConfiguration.SelectSingleNode("//dvisvgmBinPath");
-                        dvisvgmBinPath = dvisvgmNode.Attributes["value"].InnerText;
-                    }
-                    catch (Exception)
-                    {
-                        dvisvgmBinPath = "";
-                        latexBinPath = "";
-                    }
-
-                    string format = @"<{0} value=""{1}"" />";
-                    // imageFileFormat
-                    // imageDepthCorrection
-                    // imageScaleFactor
-                    // redirectFileProcessors
-                    // latexBinPath
-                    // dvisvgmBinPath
-                    return @"<documentClass value=""article"" />" +
-                           @"<imageFileFormat value=""SVG"" />" +
-                           @"<imageDepthCorrection value=""0"" />" +
-                           @"<imageScalePercentage value=""100"" />" +
-                           @"<redirectFileProcessors value=""false"" />" +
-                           string.Format(format, "dvisvgmBinPath", dvisvgmBinPath) +
-                           string.Format(format, "latexBinPath", latexBinPath) +
-                           @"<helpType value=""{@HelpFileFormat}"" />" +
-                           @"<basePath value=""{@WorkingFolder}"" />" +
-                           @"<languagefilter value=""true"" />";
+                    return
+                        @"<documentClass value=""article"" />" +
+                        @"<imageFileFormat value=""SVG"" />" +
+                        @"<additionalPreambleCommands>" +
+                        @"<line>" +
+                        @"% Paste here your additional preamble commands" +
+                        @"</line>" +
+                        @"</additionalPreambleCommands>" +
+                        @"<latexDefaultMode value=""display""/>" +
+                        @"<imageDepthCorrection value=""0"" />" +
+                        @"<imageScalePercentage value=""100"" />" +
+                        @"<redirectFileProcessors value=""false"" />" +
+                        @"<dvisvgmBinPath value="""" />" +
+                        @"<latexBinPath value="""" />" +
+                        @"<helpType value=""{@HelpFileFormat}"" />" +
+                        @"<basePath value=""{@WorkingFolder}"" />" +
+                        @"<languagefilter value=""true"" />";
                 }
             }
 
             /// <inheritdoc />
-            public override string ConfigureComponent(string currentConfiguration,
+            public override string ConfigureComponent(
+                string currentConfiguration,
                 CompositionContainer container)
             {
                 // Open the dialog to edit the configuration
@@ -213,6 +224,21 @@ namespace Novacta.Documentation.ShfbTools
                     {
 
                         var config = XElement.Parse(currentConfiguration);
+
+                        // additionalPreambleCommands
+                        var additionalPreambleCommandsNode =
+                            config.Element("additionalPreambleCommands");
+
+                        additionalPreambleCommandsNode.RemoveNodes();
+                        for (int i = 0; i < dlg.AdditionalPreambleCommands.Length; i++)
+                        {
+                            additionalPreambleCommandsNode.Add(
+                                new XElement("line", dlg.AdditionalPreambleCommands[i]));
+                        }
+
+                        // latexDefaultMode
+                        config.Element("latexDefaultMode").Attribute("value")
+                            .SetValue(dlg.LatexDefaultMode);
 
                         // imageFileFormat
                         config.Element("imageFileFormat").Attribute("value")
@@ -258,6 +284,7 @@ namespace Novacta.Documentation.ShfbTools
             : base(buildAssembler)
         {
         }
+
         #endregion
 
         #region APPLY HELPER METHODS
@@ -330,7 +357,7 @@ namespace Novacta.Documentation.ShfbTools
             return zoomFactors;
         }
 
-        private static Dictionary<string, double> PredefinedScaleFactors =
+        private static readonly Dictionary<string, double> PredefinedScaleFactors =
             InitializePredefinedScaleFactors();
 
         /// <summary>
@@ -378,12 +405,59 @@ namespace Novacta.Documentation.ShfbTools
         /// <param name="configuration">The component configuration.</param>
         public override void Initialize(XPathNavigator configuration)
         {
-
             this.WriteMessage(MessageLevel.Info,
                 "[{0}, version {1}]\r\n   Novacta LaTeX Component.  {2}",
                 AssemblyInfo.Title,
                 AssemblyInfo.Version,
                 AssemblyInfo.Copyright);
+
+            #region ADDITIONAL PREAMBLE COMMANDS
+
+            var additionalPreambleCommands =
+                configuration.SelectSingleNode("//additionalPreambleCommands");
+
+            this.AdditionalPreambleCommands =
+                (additionalPreambleCommands is null) 
+                ?
+                    new string[1]
+                        { "% Paste here your additional preamble commands" }
+                :
+                this.GetAdditionalPreambleCommands(
+                    configuration.SelectSingleNode("//additionalPreambleCommands"));
+
+            var texBuilder = new StringBuilder();
+            texBuilder.Append("\\documentclass[10pt]{article}\r\n");
+            texBuilder.Append("\\usepackage{amsmath}\r\n");
+            texBuilder.Append("\\usepackage{amsfonts}\r\n");
+            texBuilder.Append("\\usepackage[active,textmath,displaymath]{preview}\r\n");
+            texBuilder.Append("\\pagestyle{empty}\r\n");
+
+            for (int i = 0; i < this.AdditionalPreambleCommands.Length; i++)
+            {
+                texBuilder.AppendLine(this.AdditionalPreambleCommands[i]);
+            }
+
+            texBuilder.Append("\\begin{document}\r\n");
+
+            this.initialTexDocument = texBuilder.ToString();
+
+            #endregion
+
+            #region LATEX DEFAULT MODE
+
+            var latexDefaultMode = configuration.SelectSingleNode("//latexDefaultMode");
+            this.LatexDefaultMode = 
+                (latexDefaultMode is null)
+                ?
+                "display"
+                :
+                latexDefaultMode
+                    .GetAttribute("value", String.Empty).ToLowerInvariant();
+
+            this.isLatexDefaultModeInline =
+                (0 == String.CompareOrdinal(this.LatexDefaultMode, "inline")) ? true : false;
+
+            #endregion
 
             #region IMAGE FILE FORMAT
 
@@ -490,7 +564,11 @@ namespace Novacta.Documentation.ShfbTools
                 defaultSvgZoomFactor = Convert.ToString(
                     BaseSvgZoomFactor * this.ImageScalePercentage / 100.0);
             }
-            this.DviSvgm = new DviSvgm(dvisvgmBinFolder, workingFolder, defaultSvgZoomFactor);
+            this.DviSvgm = new DviSvgm(
+                dvisvgmBinFolder, 
+                workingFolder, 
+                defaultSvgZoomFactor,
+                this.RedirectFileProcessors);
 
             #endregion
 
@@ -557,10 +635,19 @@ namespace Novacta.Documentation.ShfbTools
                     AssemblyInfo.Version,
                     AssemblyInfo.Copyright));
 
+            this.WriteMessage(MessageLevel.Info, "Additional preamble commands:");
+            for (int i = 0; i < this.AdditionalPreambleCommands.Length; i++)
+            {
+                this.WriteMessage(MessageLevel.Info,
+                    this.AdditionalPreambleCommands[i]);
+            }
+
             this.WriteMessage(MessageLevel.Info,
                 string.Format("Documentation working folder: {0}", basePath));
             this.WriteMessage(MessageLevel.Info,
                 string.Format("Component working folder: {0}", workingFolder));
+            this.WriteMessage(MessageLevel.Info,
+                "Default LaTex mode: " + this.LatexDefaultMode);
             this.WriteMessage(MessageLevel.Info,
                 "Image File Format: " + this.ImageFileFormat);
             this.WriteMessage(MessageLevel.Info,
@@ -605,8 +692,8 @@ namespace Novacta.Documentation.ShfbTools
 
                 #region MODE ATTRIBUTE
 
-                // LaTeX mode attribute defaults to "display"
-                string latexMode = "display";
+                // LaTeX mode attribute defaults to a configuration option
+                string latexMode = this.LatexDefaultMode;
                 if (!(node.Attributes["mode"] is null))
                 {
                     string mode = node.Attributes["mode"].InnerText;
@@ -633,12 +720,7 @@ namespace Novacta.Documentation.ShfbTools
                 string defaultLatexScale = "normalsize";
                 string latexNodeInnerText = node.InnerText.Replace("\\\\", "\\\\\\\\").Trim();
 
-                texBuilder.Append("\\documentclass[10pt]{article}\r\n");
-                texBuilder.Append("\\usepackage{amsmath}\r\n");
-                texBuilder.Append("\\usepackage{amsfonts}\r\n");
-                texBuilder.Append("\\usepackage[active,textmath,displaymath]{preview}\r\n");
-                texBuilder.Append("\\pagestyle{empty}\r\n");
-                texBuilder.Append("\\begin{document}\r\n");
+                texBuilder.Append(this.initialTexDocument);
 
                 switch (latexMode)
                 {

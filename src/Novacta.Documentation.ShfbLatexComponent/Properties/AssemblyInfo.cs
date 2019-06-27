@@ -38,7 +38,7 @@ internal static class AssemblyInfo
     public const string Title = "Novacta.Documentation.ShfbLatexComponent";
 
     // Product version
-    public const string Version = "2018.7.8.0";
+    public const string Version = "2019.4.14.0";
 
     // Product description
     public const string Description =

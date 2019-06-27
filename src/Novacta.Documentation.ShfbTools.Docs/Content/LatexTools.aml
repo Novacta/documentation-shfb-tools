@@ -377,6 +377,45 @@
             </entry>
           </row>
           <row>
+            <entry address="Default-latex-mode">
+              <para>
+                <legacyBold>
+                  Default LaTeX Mode
+                </legacyBold>
+              </para>
+            </entry>
+            <entry>
+              <para>
+                This option controls if a LaTeX equation must be interpreted,
+                by default, as entered in <literal>inline</literal> mode, or
+                in <literal>display</literal> mode.
+                The default configuration sets this option 
+                to <literal>display</literal>.
+              </para>
+              <para>
+                Such behavior can be overridden for each specific equation,
+                as discussed in the following section.
+              </para>
+            </entry>
+          </row>
+          <row>
+            <entry>
+              <para>
+                <legacyBold>
+                  Additional Preamble Commands
+                </legacyBold>
+              </para>
+            </entry>
+            <entry>
+              <para>
+                If needed, this option enables the addition of specific 
+                commands to the preamble 
+                of the documents processed to get the  
+                LaTeX equations required in the documentation.
+              </para>
+            </entry>
+          </row>
+          <row>
             <entry>
               <para>
                 <legacyBold>
@@ -514,14 +553,18 @@
           </externalLink>.
         </para>
         <para>
-          When the latex element is in basic form, its content
+          When the default configuration
+          is active and the latex element is in basic form, then its content
           is interpreted as inserted in a displayed mathematical
           environment (separated by the main text), and sized
           applying the <codeInline>\normalsize</codeInline> LaTeX command.
         </para>
         <para>
           Such behavior can be overridden by adding attributes
-          to the latex element. If you want a LaTeX formula displayed in-line,
+          to the latex element or overriding the default configuration. 
+        </para>
+        <para>
+          If you want a LaTeX formula displayed in-line,
           that is, within the body of text where it is declared,
           you can add a <codeInline>mode</codeInline> attribute
           having the <literal>"inline"</literal> value, as in the following
@@ -535,7 +578,11 @@
         <para>
           If a <legacyItalic>LaTeX</legacyItalic>  element has
           no <codeInline>mode</codeInline> attribute, then its
-          mode defaults to value <literal>"display"</literal>.
+          mode is set, by default, according to the
+          <link xlink:href="#Default-latex-mode">
+            Default LaTeX mode
+          </link>
+          configuration option.
         </para>
         <para>
           The Novacta

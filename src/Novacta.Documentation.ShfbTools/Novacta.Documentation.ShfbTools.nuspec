@@ -3,11 +3,11 @@
   <package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
   <metadata>
     <id>Novacta.Documentation.ShfbTools</id>
-    <version>2018.7.8-preview000</version>
+    <version>2019.4.14-preview000</version>
     <authors>Giovanni Lafratta</authors>
     <owners>novacta</owners>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
-    <licenseUrl>http://novacta.github.io/documentation-shfb-tools/html/77c2fac9-a810-4e5b-ba0e-afff50a42467.htm</licenseUrl>
+    <license type="expression">MIT</license>
     <projectUrl>https://github.com/Novacta/documentation-shfb-tools</projectUrl>
     <description>This package provides support for adding features to the Sandcastle Help File Builder project. In particular, the tools enable what follows.
 * Adding LaTeX content to SHFB documentation files.
@@ -15,7 +15,13 @@
 * Setting lists of keywords to be colorized in code examples.
 </description>
     <summary>This package enhances Sandcastle Help File Builder by providing support for LaTeX formulas, image management in reference topics, and class name highlighting in code examples.</summary>
-    <releaseNotes>Release of the package supporting SHFB version v2018.7.8.0.</releaseNotes>
+    <releaseNotes>
+      Release of the package supporting SHFB version v2019.4.14.0.
+      
+      Changes in this release.
+      * A new configuration option controls if a LaTeX equation must be interpreted, by default, as entered in "inline" mode, or in "display" mode.
+      * A new configuration option enables the addition of further commands to the preamble of LaTeX documents used by the tools to represent equations.
+    </releaseNotes>
     <copyright>Copyright © 2018, Giovanni Lafratta, All Rights Reserved.</copyright>
     <tags>LaTeX Documentation Colorization XML comments &lt;code&gt; Sandcastle SHFB</tags>
     <repository type="Git" url="https://github.com/Novacta/documentation-shfb-tools" />

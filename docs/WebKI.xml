@@ -1,6 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <HelpKI>
   <HelpKINode Title="AddClassNamesFamily method" Url="html/5630b532-ab3d-ef3d-453e-85285c4cae80.htm" />
+  <HelpKINode Title="AdditionalPreambleCommands property">
+    <HelpKINode Title="LatexConfigDlg.AdditionalPreambleCommands Property " Url="html/5c462fe3-eed3-5025-6532-1fd389c703d5.htm" />
+    <HelpKINode Title="ShfbLatexComponent.AdditionalPreambleCommands Property " Url="html/32eea69e-677f-83ee-6cd0-844bdc800843.htm" />
+  </HelpKINode>
   <HelpKINode Title="All enumeration member" Url="html/cfcfdf3d-a691-0a1f-3e17-c98fe07e610f.htm" />
   <HelpKINode Title="Apply method" Url="html/4de0d3a5-5cbb-05fc-b014-fb8a56f6d152.htm" />
   <HelpKINode Title="Arguments method">
@@ -32,13 +36,13 @@
   <HelpKINode Title="DviPng.WorkingDirectory property" Url="html/b3b9a2cd-1ad1-5776-2833-d09d1d9b67a5.htm" />
   <HelpKINode Title="DviSvgm class">
     <HelpKINode Title="DviSvgm Class" Url="html/ef6826b2-f602-d454-c402-a8764d47f6db.htm" />
-    <HelpKINode Title="constructor" Url="html/ba5ad16b-5ea5-9dd5-f4bd-e2e4e911a880.htm" />
+    <HelpKINode Title="constructor" Url="html/c26714df-e522-b368-4b35-da92ce68a8a3.htm" />
     <HelpKINode Title="methods" Url="html/9a88d239-ec53-359b-8e54-2a8c8c960b9e.htm" />
     <HelpKINode Title="properties" Url="html/b375cb30-00bc-eabe-ebd0-68863806fb21.htm" />
   </HelpKINode>
   <HelpKINode Title="DviSvgm property" Url="html/83b0afb7-2beb-2d7a-50d7-e43493978757.htm" />
   <HelpKINode Title="DviSvgm.Arguments method" Url="html/72376c8a-ffaf-2cbc-b941-24cc78687a2e.htm" />
-  <HelpKINode Title="DviSvgm.DviSvgm constructor" Url="html/ba5ad16b-5ea5-9dd5-f4bd-e2e4e911a880.htm" />
+  <HelpKINode Title="DviSvgm.DviSvgm constructor" Url="html/c26714df-e522-b368-4b35-da92ce68a8a3.htm" />
   <HelpKINode Title="DviSvgm.Executable property" Url="html/9e979f05-9383-bc03-56ef-10b6ecf16d65.htm" />
   <HelpKINode Title="DviSvgm.WorkingDirectory property" Url="html/058365f5-45a6-b579-d830-15d5c538172c.htm" />
   <HelpKINode Title="DviSvgmBinFolder property" Url="html/4f4c1d61-2cf9-b3fb-f2ac-2a36e6823748.htm" />
@@ -127,6 +131,7 @@
     <HelpKINode Title="methods" Url="html/87f79d45-d61b-2857-21c0-23100be5fc0b.htm" />
     <HelpKINode Title="properties" Url="html/c425c432-f269-0362-49bd-d5986c89eb68.htm" />
   </HelpKINode>
+  <HelpKINode Title="LatexConfigDlg.AdditionalPreambleCommands property" Url="html/5c462fe3-eed3-5025-6532-1fd389c703d5.htm" />
   <HelpKINode Title="LatexConfigDlg.Dispose method" Url="html/3c91f52f-841b-abc2-aa91-19e91f435560.htm" />
   <HelpKINode Title="LatexConfigDlg.DviSvgmBinFolder property" Url="html/4f4c1d61-2cf9-b3fb-f2ac-2a36e6823748.htm" />
   <HelpKINode Title="LatexConfigDlg.ImageDepthCorrection property" Url="html/239f956e-d3df-80fc-7b25-8364c831b63f.htm" />
@@ -134,7 +139,12 @@
   <HelpKINode Title="LatexConfigDlg.ImageScalePercentage property" Url="html/a4900166-a14a-b957-9550-aa8218095f7d.htm" />
   <HelpKINode Title="LatexConfigDlg.LatexBinFolder property" Url="html/735cafc0-d52a-b43b-752e-ba169d9fe814.htm" />
   <HelpKINode Title="LatexConfigDlg.LatexConfigDlg constructor" Url="html/0cb2b391-7e1e-e476-07ce-c2ab97a603e7.htm" />
+  <HelpKINode Title="LatexConfigDlg.LatexDefaultMode property" Url="html/b9c5ad2f-c8f4-8c1b-a7aa-0c2db08689f4.htm" />
   <HelpKINode Title="LatexConfigDlg.RedirectFileProcessors property" Url="html/aa076df8-efeb-2eb3-29e4-5055471e0127.htm" />
+  <HelpKINode Title="LatexDefaultMode property">
+    <HelpKINode Title="LatexConfigDlg.LatexDefaultMode Property " Url="html/b9c5ad2f-c8f4-8c1b-a7aa-0c2db08689f4.htm" />
+    <HelpKINode Title="ShfbLatexComponent.LatexDefaultMode Property " Url="html/63666b21-9e8e-d939-2ad9-b590f3ce6ff4.htm" />
+  </HelpKINode>
   <HelpKINode Title="LatexTools class">
     <HelpKINode Title="LatexTools Class" Url="html/aba51c7e-31b7-3960-2885-289a1cd95caf.htm" />
     <HelpKINode Title="methods" Url="html/4c2cda77-c58f-4191-a4fb-6a7955234cef.htm" />
@@ -176,6 +186,7 @@
     <HelpKINode Title="methods" Url="html/57b2e19f-a196-0f16-0bf1-a04dc5bcdabe.htm" />
     <HelpKINode Title="properties" Url="html/0b8d863f-45b4-f23e-36ee-814536aaaa72.htm" />
   </HelpKINode>
+  <HelpKINode Title="ShfbLatexComponent.AdditionalPreambleCommands property" Url="html/32eea69e-677f-83ee-6cd0-844bdc800843.htm" />
   <HelpKINode Title="ShfbLatexComponent.Apply method" Url="html/4de0d3a5-5cbb-05fc-b014-fb8a56f6d152.htm" />
   <HelpKINode Title="ShfbLatexComponent.BasePath property" Url="html/c984c8ec-0197-be8a-040a-fa0aa2b413d7.htm" />
   <HelpKINode Title="ShfbLatexComponent.DviPng property" Url="html/b35d3e30-daa5-749d-fe89-ac1d51cbf561.htm" />
@@ -193,6 +204,7 @@
   <HelpKINode Title="ShfbLatexComponent.ImageScalePercentage property" Url="html/e0fd26b1-a311-5e0f-a640-f446909fd8ef.htm" />
   <HelpKINode Title="ShfbLatexComponent.Initialize method" Url="html/2617839e-c261-4f76-4ea6-a3a93741f3fc.htm" />
   <HelpKINode Title="ShfbLatexComponent.Latex property" Url="html/f60c65d4-0e28-a723-c5c6-f98fd3d1ebb7.htm" />
+  <HelpKINode Title="ShfbLatexComponent.LatexDefaultMode property" Url="html/63666b21-9e8e-d939-2ad9-b590f3ce6ff4.htm" />
   <HelpKINode Title="ShfbLatexComponent.OutputFolders property" Url="html/18148bc1-21f1-fa5a-5b95-680374a7dd7a.htm" />
   <HelpKINode Title="ShfbLatexComponent.RedirectFileProcessors property" Url="html/34a4e389-9e74-e320-fa93-4b7776f24d94.htm" />
   <HelpKINode Title="ShfbLatexComponent.ShfbLatexComponent constructor" Url="html/142bbbdb-2675-b453-d67d-76aeb3fdc586.htm" />

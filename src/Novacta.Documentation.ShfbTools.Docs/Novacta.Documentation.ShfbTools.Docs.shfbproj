@@ -66,17 +66,21 @@
     <ComponentConfigurations>
       <ComponentConfig id="LaTeX Component" enabled="True">
         <component id="LaTeX Component">
-          <documentClass value="article" />
-          <imageFileFormat value="SVG" />
-          <imageDepthCorrection value="0" />
-          <imageScalePercentage value="100" />
-          <redirectFileProcessors value="true" />
-          <dvisvgmBinPath value="C:\Program Files\MiKTeX 2.9\miktex\bin\x64" />
-          <latexBinPath value="C:\Program Files\MiKTeX 2.9\miktex\bin\x64" />
-          <helpType value="{@HelpFileFormat}" />
-          <basePath value="{@WorkingFolder}" />
-          <languagefilter value="true" />
-        </component>
+  <documentClass value="article" />
+  <imageFileFormat value="SVG" />
+  <additionalPreambleCommands>
+    <line>% Paste here your additional preamble commands</line>
+  </additionalPreambleCommands>
+  <latexDefaultMode value="display" />
+  <imageDepthCorrection value="0" />
+  <imageScalePercentage value="100" />
+  <redirectFileProcessors value="false" />
+  <dvisvgmBinPath value="C:\Program Files\MiKTeX 2.9\miktex\bin\x64" />
+  <latexBinPath value="C:\Program Files\MiKTeX 2.9\miktex\bin\x64" />
+  <helpType value="{@HelpFileFormat}" />
+  <basePath value="{@WorkingFolder}" />
+  <languagefilter value="true" />
+</component>
       </ComponentConfig>
     </ComponentConfigurations>
     <WorkingPath>
@@ -116,6 +120,7 @@
     <None Include="Content\VersionHistory\v2018.5.14.0.aml" />
     <None Include="Content\VersionHistory\v2018.5.29.0.aml" />
     <None Include="Content\VersionHistory\v2018.7.8.0.aml" />
+    <None Include="Content\VersionHistory\v2019.4.14.0.aml" />
     <None Include="Content\VersionHistory\VersionHistory.aml" />
     <None Include="Content\Welcome.aml" />
   </ItemGroup>

@@ -19,7 +19,7 @@ namespace HighlightingToolsManager
             // applied when highlighting.
             // See the documentation for a list of 
             // supported colors.
-            HighlightingTools.SetClassNamesColor("RoyalBlue");
+            HighlightingTools.SetClassNamesColor("MediumAquaMarine");
 
             // B. Add the class names to be highlighted.
 
@@ -53,8 +53,9 @@ namespace HighlightingToolsManager
                 languages);
 
             // To remove a family of class names,
-            // so that it will no longer be highlighted.
-            HighlightingTools.RemoveClassNamesFamily(family);
+            // so that it will no longer be highlighted,
+            // uncomment the following line.
+            //HighlightingTools.RemoveClassNamesFamily(family);
 
             Console.ReadKey();
         }

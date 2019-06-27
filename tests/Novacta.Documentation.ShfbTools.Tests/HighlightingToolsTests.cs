@@ -16,7 +16,7 @@ namespace Novacta.Documentation.ShfbTools.Tests
         [TestMethod]
         public void TestSetClassNameColor()
         {
-            string color = "Cyan";
+            string color = "MediumAquaMarine";
 
             int exitCode = HighlightingTools.SetClassNamesColor(
                 color: color,

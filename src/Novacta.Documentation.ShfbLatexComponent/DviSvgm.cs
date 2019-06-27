@@ -20,16 +20,25 @@ namespace Novacta.Documentation.ShfbTools
         /// <param name="dvisvgmBinPath">The DviSvgm bin path.</param>
         /// <param name="workingPath">The working path.</param>
         /// <param name="defaultZoomFactor">The default zoom factor.</param>
-        public DviSvgm(string dvisvgmBinPath, string workingPath, string defaultZoomFactor)
+        /// <param name="redirectFileProcessors">
+        /// <c>true</c> if messages must be printed; otherwise, <c>false</c>.
+        /// </param>
+        public DviSvgm(
+            string dvisvgmBinPath, 
+            string workingPath, 
+            string defaultZoomFactor,
+            bool redirectFileProcessors)
         {
             this.exe = dvisvgmBinPath + Path.DirectorySeparatorChar + "dvisvgm.exe";
             this.workingPath = workingPath;
             this.defaultZoomFactor = defaultZoomFactor;
+            this.verbosity = redirectFileProcessors ? "7" : "0";
         }
 
         private readonly string workingPath;
         private readonly string exe;
         private readonly string defaultZoomFactor;
+        private readonly string verbosity;
 
         /// <inheritdoc />
         public override string WorkingDirectory { get { return this.workingPath; } }
@@ -45,7 +54,8 @@ namespace Novacta.Documentation.ShfbTools
                 zoomFactor = additionalInfo;
             }
 
-            var arguments = @" --no-fonts --exact --zoom=" + zoomFactor + " \"" +
+            var arguments = @" --verbosity=" + this.verbosity +
+                " --no-fonts --exact --zoom=" + zoomFactor + " \"" +
                 fileName + "\"";
 
             return arguments;

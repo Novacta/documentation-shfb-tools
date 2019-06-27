@@ -6,6 +6,7 @@ using System.Windows.Forms;
 using System.Linq;
 using System.Xml.Linq;
 using System.Threading;
+using System.Collections.Generic;
 
 namespace Novacta.Documentation.ShfbTools
 {
@@ -15,6 +16,20 @@ namespace Novacta.Documentation.ShfbTools
     /// </summary>
     public partial class LatexConfigDlg : Form
     {
+        #region State
+
+        /// <summary>
+        /// Gets or sets the additional preamble commands.
+        /// </summary>
+        /// <value>The additional preamble commands.</value>
+        public string[] AdditionalPreambleCommands { get; set; }
+
+        /// <summary>
+        /// Gets or sets the LaTeX default mode.
+        /// </summary>
+        /// <value>The LaTeX default mode.</value>
+        public string LatexDefaultMode { get; set; }
+
         /// <summary>
         /// Gets or sets the image file format.
         /// </summary>
@@ -42,7 +57,6 @@ namespace Novacta.Documentation.ShfbTools
         /// otherwise, <c>false</c>.</value>
         public bool RedirectFileProcessors { get; set; }
 
-
         /// <summary>
         /// Gets or sets the Latex bin folder.
         /// </summary>
@@ -55,6 +69,7 @@ namespace Novacta.Documentation.ShfbTools
         /// <value>The DviSvgm bin folder.</value>
         public string DviSvgmBinFolder { get; set; }
 
+        #endregion
 
         /// <summary>
         /// Initializes a new instance of the <see cref="LatexConfigDlg"/> class.
@@ -77,11 +92,15 @@ namespace Novacta.Documentation.ShfbTools
         /// <code language="XML" title="Default Configuration">
         /// <![CDATA[
         /// <?xml version="1.0" encoding="utf-8"?>
-        /// <component id="Novacta.Shfb.LatexComponent">
+        /// <component id="Latex Component">
         ///    <documentClass value="article" />
-        ///    <imageFileFormat value="PNG" />
-        ///    <redirectFileProcessors value="true" />
-        ///    <imageDepthCorrection value="17" />
+        ///    <imageFileFormat value="SVG" />
+        ///    <additionalPreambleCommands>
+        ///       <line>% Add here additional preamble commands</line>
+        ///    </additionalPreambleCommands>
+        ///    <latexDefaultMode value="display"/>
+        ///    <redirectFileProcessors value="false" />
+        ///    <imageDepthCorrection value="0" />
         ///    <imageScalePercentage value="100" />
         ///    <latexBinPath value="C:\Program Files\MiKTeX 2.9\miktex\bin\x64" />
         ///    <dvisvgmBinPath value="C:\Program Files\MiKTeX 2.9\miktex\bin\x64" />
@@ -98,17 +117,42 @@ namespace Novacta.Documentation.ShfbTools
             this.InitializeComponent();
             var config = XElement.Parse(configXml);
 
+            // Additional Preamble Commands
+            var additionalPreambleCommands = config.Element("additionalPreambleCommands");
+            var lineNodes = additionalPreambleCommands.Descendants();
+            List<string> lines = new List<string>();
+            foreach (var lineNode in lineNodes)
+            {
+                lines.Add(lineNode.Value);
+            }
+
+            this.c_additionalPreambleCommands.Lines = lines.ToArray();
+
+            // LaTeX Default Mode
+            string mode;
+            RadioButton defaultModeRadioButton;
+
+            mode = config.Element("latexDefaultMode")
+                 .Attribute("value").Value;
+
+            defaultModeRadioButton = 
+                this.c_groupBoxDefaultLaTeXMode.Controls.OfType<RadioButton>()
+                    .First(r => 0 == string.CompareOrdinal(r.Text.ToLower(), mode));
+
+            defaultModeRadioButton.Checked = true;
+
             // Image File Format
             string format;
-            RadioButton radioButton;
+            RadioButton fileFormatRadioButton;
 
             format = config.Element("imageFileFormat")
                  .Attribute("value").Value;
 
-            radioButton = this.c_groupBoxFileFormat.Controls.OfType<RadioButton>()
-              .First(r => 0 == string.CompareOrdinal(r.Text, format));
+            fileFormatRadioButton = 
+                this.c_groupBoxFileFormat.Controls.OfType<RadioButton>()
+                    .First(r => 0 == string.CompareOrdinal(r.Text, format));
 
-            radioButton.Checked = true;
+            fileFormatRadioButton.Checked = true;
 
             // Image Depth Correction
             this.c_imageDepthCorrection.Value = decimal.Parse(
@@ -138,13 +182,27 @@ namespace Novacta.Documentation.ShfbTools
 
         private void okButton_Click(object sender, EventArgs e)
         {
-            // Image File Format
-            RadioButton radioButton;
+            // Additional Preamble Commands
+            this.AdditionalPreambleCommands =
+                this.c_groupBoxPreambleAdditionalItems.Controls
+                    .OfType<TextBox>()
+                    .First().Lines;
 
-            radioButton = this.c_groupBoxFileFormat.Controls
+            // LaTeX Default Mode
+            RadioButton modeRadioButton;
+
+            modeRadioButton = this.c_groupBoxDefaultLaTeXMode.Controls
                 .OfType<RadioButton>()
                 .First(r => r.Checked);
-            this.ImageFileFormat = radioButton.Text;
+            this.LatexDefaultMode = modeRadioButton.Text.ToLower();
+
+            // Image File Format
+            RadioButton formatRadioButton;
+
+            formatRadioButton = this.c_groupBoxFileFormat.Controls
+                .OfType<RadioButton>()
+                .First(r => r.Checked);
+            this.ImageFileFormat = formatRadioButton.Text;
 
             // Image Depth Correction
             this.ImageDepthCorrection = Convert.ToInt32(this.c_imageDepthCorrection.Value);
@@ -169,6 +227,8 @@ namespace Novacta.Documentation.ShfbTools
             this.Close();
         }
 
+        #region Browsing folders
+        
         private void latexBrowseButton_Click(object sender, EventArgs e)
         {
             var t = new Thread(this.SelectLatexFolder);
@@ -248,5 +308,7 @@ namespace Novacta.Documentation.ShfbTools
                 this.SetDviSvgmText(dialog.SelectedPath);
             }
         }
+
+        #endregion
     }
 }
