@@ -184,8 +184,8 @@ namespace Novacta.Documentation.ShfbTools
         }
 
         /// <summary>
-        /// Enumerates the file managers that encapsulates the
-        /// updating logic required by the Novacta SHFB Image Tools
+        /// Enumerates the file managers required to encapsulate the
+        /// updating logic of the Novacta SHFB Image Tools
         /// for the specified path.
         /// </summary>
         /// <param name="updateInfo">The update information.</param>

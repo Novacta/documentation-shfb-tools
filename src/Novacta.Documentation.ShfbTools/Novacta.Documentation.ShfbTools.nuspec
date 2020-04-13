@@ -3,7 +3,7 @@
   <package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
   <metadata>
     <id>Novacta.Documentation.ShfbTools</id>
-    <version>2019.4.14-preview000</version>
+    <version>2020.3.6-preview000</version>
     <authors>Giovanni Lafratta</authors>
     <owners>novacta</owners>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
@@ -16,11 +16,7 @@
 </description>
     <summary>This package enhances Sandcastle Help File Builder by providing support for LaTeX formulas, image management in reference topics, and class name highlighting in code examples.</summary>
     <releaseNotes>
-      Release of the package supporting SHFB version v2019.4.14.0.
-      
-      Changes in this release.
-      * A new configuration option controls if a LaTeX equation must be interpreted, by default, as entered in "inline" mode, or in "display" mode.
-      * A new configuration option enables the addition of further commands to the preamble of LaTeX documents used by the tools to represent equations.
+      Release of the package supporting SHFB version v2020.3.6.0.
     </releaseNotes>
     <copyright>Copyright © 2018, Giovanni Lafratta, All Rights Reserved.</copyright>
     <tags>LaTeX Documentation Colorization XML comments &lt;code&gt; Sandcastle SHFB</tags>
@@ -31,8 +27,8 @@
   </metadata>
   <files>
     <file src="..\Novacta.Documentation.ShfbTools\bin\Release\Novacta.Documentation.ShfbTools.dll"
-          target="lib\net462"/>
+          target="lib\net472"/>
     <file src="..\Novacta.Documentation.ShfbTools\bin\Release\Novacta.Documentation.ShfbTools.xml"
-          target="lib\net462"/>
+          target="lib\net472"/>
   </files>
 </package>

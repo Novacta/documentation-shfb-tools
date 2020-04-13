@@ -10,7 +10,7 @@ namespace Novacta.Documentation.ShfbTools.Tests
     [TestClass]
     public class LatexToolsTests
     {
-        static readonly string root = @".\";
+        const string root = @".\";
 
         [TestMethod]
         public void TestInstall()

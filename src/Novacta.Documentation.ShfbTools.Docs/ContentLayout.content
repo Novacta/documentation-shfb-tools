@@ -15,7 +15,12 @@
     <HelpKeywords>
       <HelpKeyword index="K" term="version, history" />
     </HelpKeywords>
-    <Topic id="676f68cb-69d9-4d30-bff2-cceb7a20beca" visible="True" isSelected="true" title="Version 2019.4.14-preview000" />
+    <Topic id="29edcf6a-343e-4a3f-b8f7-f2220bba94f8" visible="True" isSelected="true" title="Version 2020.3.6-preview000">
+      <HelpKeywords>
+        <HelpKeyword index="K" term="version, 2020.3.6.0" />
+      </HelpKeywords>
+    </Topic>
+    <Topic id="676f68cb-69d9-4d30-bff2-cceb7a20beca" visible="True" title="Version 2019.4.14-preview000" />
     <Topic id="070d0c26-8eed-4214-8542-5ff7f3df705b" visible="True" title="Version 2018.7.8-preview000" />
     <Topic id="8f39c593-5a46-43bc-a16a-bc599962734f" visible="True" title="Version 2018.5.29-preview000">
       <HelpKeywords>

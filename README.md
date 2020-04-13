@@ -17,7 +17,7 @@ In particular, the tools enable what follows.
 Full documentation is located [here](http://novacta.github.io/documentation-shfb-tools/).
 
 ## Versioning
-We use [SemVer](http://semver.org/) for versioning. 
+We follow [SHFB](https://github.com/EWSoftware/SHFB) for versioning. 
 For available versions, see the 
 [tags on this repository](https://github.com/novacta/documentation-shfb-tools/tags). 
 

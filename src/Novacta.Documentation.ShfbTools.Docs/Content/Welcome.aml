@@ -30,8 +30,8 @@
         The project targets
         the
         <externalLink>
-          <linkText>.NET Framework, version 4.6.2</linkText>
-          <linkUri>https://github.com/Microsoft/dotnet/blob/master/releases/net462/README.md</linkUri>
+          <linkText>.NET Framework, version 4.7.2</linkText>
+          <linkUri>https://github.com/Microsoft/dotnet/blob/master/releases/net472/README.md</linkUri>
         </externalLink>.
       </para>
       <para>
