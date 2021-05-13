@@ -3,7 +3,7 @@
   <package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
   <metadata>
     <id>Novacta.Documentation.ShfbTools</id>
-    <version>2020.3.6-preview000</version>
+    <version>2021.4.9-preview000</version>
     <authors>Giovanni Lafratta</authors>
     <owners>novacta</owners>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
@@ -16,13 +16,16 @@
 </description>
     <summary>This package enhances Sandcastle Help File Builder by providing support for LaTeX formulas, image management in reference topics, and class name highlighting in code examples.</summary>
     <releaseNotes>
-      Release of the package supporting SHFB version v2020.3.6.0.
+      Release of the package supporting SHFB version v2021.4.9.0.
     </releaseNotes>
     <copyright>Copyright © 2018, Giovanni Lafratta, All Rights Reserved.</copyright>
     <tags>LaTeX Documentation Colorization XML comments &lt;code&gt; Sandcastle SHFB</tags>
     <repository type="Git" url="https://github.com/Novacta/documentation-shfb-tools" />
     <dependencies>
-      <dependency id="Novacta.Transactions.IO" version="1.0.0" />
+      
+		<group targetFramework=".NETFramework4.7.2">
+			<dependency id="Novacta.Transactions.IO" version="1.0.0" />
+		</group>
     </dependencies>
   </metadata>
   <files>

@@ -13,7 +13,7 @@
     <RootNamespace>Novacta.Documentation.ShfbTools.Docs</RootNamespace>
     <Name>Novacta.Documentation.ShfbTools.Docs</Name>
     <!-- SHFB properties -->
-    <FrameworkVersion>.NET Framework 4.6.2</FrameworkVersion>
+    <FrameworkVersion>.NET Framework 4.7.2</FrameworkVersion>
     <OutputPath>Help\</OutputPath>
     <HtmlHelpName>Novacta.Documentation.ShfbTools.Docs</HtmlHelpName>
     <Language>en-US</Language>
@@ -66,21 +66,21 @@
     <ComponentConfigurations>
       <ComponentConfig id="LaTeX Component" enabled="True">
         <component id="LaTeX Component">
-          <documentClass value="article" />
-          <imageFileFormat value="SVG" />
-          <additionalPreambleCommands>
-            <line>% Paste here your additional preamble commands</line>
-          </additionalPreambleCommands>
-          <latexDefaultMode value="display" />
-          <imageDepthCorrection value="0" />
-          <imageScalePercentage value="100" />
-          <redirectFileProcessors value="false" />
-          <dvisvgmBinPath value="C:\Program Files\MiKTeX 2.9\miktex\bin\x64" />
-          <latexBinPath value="C:\Program Files\MiKTeX 2.9\miktex\bin\x64" />
-          <helpType value="{@HelpFileFormat}" />
-          <basePath value="{@WorkingFolder}" />
-          <languagefilter value="true" />
-        </component>
+  <documentClass value="article" />
+  <imageFileFormat value="SVG" />
+  <additionalPreambleCommands>
+    <line>% Paste here your additional preamble commands</line>
+  </additionalPreambleCommands>
+  <latexDefaultMode value="display" />
+  <imageDepthCorrection value="0" />
+  <imageScalePercentage value="100" />
+  <redirectFileProcessors value="false" />
+  <dvisvgmBinPath value="C:\Users\giova\AppData\Local\Programs\MiKTeX\miktex\bin\x64" />
+  <latexBinPath value="C:\Users\giova\AppData\Local\Programs\MiKTeX\miktex\bin\x64" />
+  <helpType value="{@HelpFileFormat}" />
+  <basePath value="{@WorkingFolder}" />
+  <languagefilter value="true" />
+</component>
       </ComponentConfig>
     </ComponentConfigurations>
     <WorkingPath>
@@ -117,6 +117,7 @@
     <None Include="Content\LatexTools.aml" />
     <None Include="Content\License.aml" />
     <None Include="Content\Tests.aml" />
+    <None Include="Content\VersionHistory\v2021.4.9.0.aml" />
     <None Include="Content\VersionHistory\v2020.3.6.0.aml" />
     <None Include="Content\VersionHistory\v2018.5.14.0.aml" />
     <None Include="Content\VersionHistory\v2018.5.29.0.aml" />

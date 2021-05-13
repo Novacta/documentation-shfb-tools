@@ -371,7 +371,7 @@ namespace Novacta.Documentation.ShfbTools
             // Color Names Supported by All Browsers
             // Source: https://www.w3schools.com/cssref/css_colors.asp
             // Date of access: 3/21/2017
-            static string[] allBrowsersColors = new string[] {
+            static readonly string[] allBrowsersColors = new string[] {
             "AliceBlue,#F0F8FF",
             "AntiqueWhite,#FAEBD7",
             "Aqua,#00FFFF",
@@ -522,7 +522,7 @@ namespace Novacta.Documentation.ShfbTools
             "YellowGreen,#9ACD32"
         };
 
-            static Dictionary<string, string> supportedColors =
+            static readonly Dictionary<string, string> supportedColors =
                 new Dictionary<string, string>();
 
 
@@ -756,7 +756,7 @@ namespace Novacta.Documentation.ShfbTools
         /// </summary>
         internal static class SupportedLanguages
         {
-            static string[] supportedLanguages = new string[]
+            static readonly string[] supportedLanguages = new string[]
                 {
                 "c",
                 "cs",

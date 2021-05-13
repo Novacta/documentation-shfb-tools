@@ -13,7 +13,7 @@
     <RootNamespace>SampleClassLibrary.Documentation</RootNamespace>
     <Name>SampleClassLibrary.Documentation</Name>
     <!-- SHFB properties -->
-    <FrameworkVersion>.NET Framework 4.6.2</FrameworkVersion>
+    <FrameworkVersion>.NET Framework 4.7.2</FrameworkVersion>
     <OutputPath>.\Help\</OutputPath>
     <HtmlHelpName>SampleClassLibraryDocumentation</HtmlHelpName>
     <Language>en-US</Language>
@@ -62,9 +62,9 @@
   <latexDefaultMode value="display" />
   <imageDepthCorrection value="0" />
   <imageScalePercentage value="100" />
-  <redirectFileProcessors value="false" />
-  <dvisvgmBinPath value="C:\Program Files\MiKTeX 2.9\miktex\bin\x64" />
-  <latexBinPath value="C:\Program Files\MiKTeX 2.9\miktex\bin\x64" />
+  <redirectFileProcessors value="true" />
+  <dvisvgmBinPath value="C:\Users\giova\AppData\Local\Programs\MiKTeX\miktex\bin\x64" />
+  <latexBinPath value="C:\Users\giova\AppData\Local\Programs\MiKTeX\miktex\bin\x64" />
   <helpType value="{@HelpFileFormat}" />
   <basePath value="{@WorkingFolder}" />
   <languagefilter value="true" />
